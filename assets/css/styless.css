@@ -266,72 +266,6 @@
   width: 50%;
 }
 
-/* Estilos generales del contenedor */
-.banner-container {
-  background: linear-gradient(to right, #3e3e3e, #564e4e); /* Fondo degradado */
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  position: relative;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos para la misión y visión */
-.container-nosotros {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.content-nosotros {
-  flex: 1 1 45%;
-  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.content-nosotros h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.content-nosotros p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.typing-title {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid rgba(255, 255, 255, 0.75); /* Cursor efecto */
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgba(255, 255, 255, 0.75);
-  }
-}
 /*----------------SECTION SERVICIOS-----------------*/
 
 #servicios {
@@ -474,13 +408,56 @@
   font-size: 1.2rem;
 }
 
+/*----------------------MISION Y VISION---------------------------------*/
+
+/* Estilos generales del contenedor */
+.banner-container {
+  background: linear-gradient(to right, #3e3e3e, #564e4e); /* Fondo degradado */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la misión y visión */
+.container-nosotros {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content-nosotros {
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.content-nosotros h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-nosotros p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /*----------------------------CONTACTO----------------------------------*/
 
 .container-info {
   display: flex;
-  flex-direction: column;
   gap: 50px;
   padding-top: 35px;
+  width: 100vw;
 }
 
 .container-info-text {
@@ -491,11 +468,20 @@
   gap: 15px;
 }
 
+.container-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+
 .container-icon {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 25px;
 }
 
 .a-icon {
@@ -515,8 +501,44 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
+  width: 60%;
 }
 
 .fcontainer {
   padding-bottom: 35px;
+}
+
+.form-container {
+  display: flex;
+  gap: 15px;
+}
+
+.input-form {
+  width: 150px;
+}
+
+.textArea {
+  width: 315px;
+  min-height: 200px;
+}
+
+.btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--negro);
+  color: var(--amarillo);
+  border: 3px solid var(--amarillo);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  background: var(--amarillo);
+  color: white;
+  transform: scale(1.05);
+  border: 3px solid var(--negro);
 }

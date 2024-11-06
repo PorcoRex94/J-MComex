@@ -18,22 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ------------------Achica el Header--------------------*/
 
-window.onscroll = function () {
-  const header = document.getElementById("header");
-  const iconChange = document.getElementById("icon-change");
-  const iconOriginal = document.getElementById("icon-original");
-
-  if (window.scrollY > 100) {
-    header.classList.add("header-small");
-    iconChange.style.display = "block";
-    iconOriginal.style.display = "none";
-  } else {
-    header.classList.remove("header-small");
-    iconChange.style.display = "none";
-    iconOriginal.style.display = "block";
-  }
-};
-
 /*-----------------Sacarle el evento predefinido del a------------ */
 
 function toggleInfo(event) {
