@@ -123,12 +123,11 @@ html {
 
 .overlay {
   position: absolute;
-  top: 25%;
-  left: 8%;
+  top: 20%;
+  left: 2%;
   width: 100%;
   height: 100%;
   display: flex;
-  gap: 130px;
   color: white;
 }
 
@@ -166,6 +165,9 @@ html {
 }
 
 .hache-uno {
+  position: relative;
+  top: 25%;
+  right: 5%;
   color: white;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
