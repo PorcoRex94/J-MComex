@@ -383,6 +383,7 @@ html {
 .modal-text {
   text-indent: -0.5rem;
   line-height: 1.5rem;
+  text-align: justify;
 }
 
 .asesoria {
