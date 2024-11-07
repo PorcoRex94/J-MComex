@@ -18,6 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ------------------Achica el Header--------------------*/
 
+const header = document.getElementById("header");
+
+// Detectar el desplazamiento del usuario
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    // Cambia el valor según cuándo quieras que el header se achique
+    header.classList.add("header-small");
+  } else {
+    header.classList.remove("header-small");
+  }
+});
+
 /*-----------------Sacarle el evento predefinido del a------------ */
 
 function toggleInfo(event) {
