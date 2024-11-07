@@ -376,6 +376,19 @@ html {
   object-fit: cover;
 }
 
+.h-t-text {
+  text-align: center;
+}
+
+.modal-text {
+  text-indent: -0.5rem;
+  line-height: 1.5rem;
+}
+
+.asesoria {
+  text-indent: -0.7rem;
+}
+
 .modal-overlay {
   display: none; /* Oculto por defecto */
   position: fixed;
@@ -569,4 +582,25 @@ html {
   color: white;
   transform: scale(1.05);
   border: 3px solid var(--negro);
+}
+
+/*-----------Icono de WSP--------------------------*/
+
+#whatsapp-icon {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* Ajusta el tamaño según prefieras */
+  height: 50px;
+  z-index: 1000; /* Asegura que quede sobre el contenido */
+}
+
+#whatsapp-icon img {
+  width: 100%;
+  height: auto;
+}
+
+#whatsapp-icon.visible {
+  display: block;
 }

@@ -38,25 +38,40 @@ function toggleInfo(event) {
 
 /*-----------------Despliegue del +INFO-------------------------- */
 
+// Función para alternar el modal con información
 function toggleInfo(button) {
   // Encuentra el contenedor de texto al que pertenece el botón clickeado
   const container = button.closest(".container-content-text");
   // Obtiene el contenido de la caja de información
   const infoBox = container.querySelector(".info-box");
 
-  // Clonamos el contenido del info-box y lo colocamos en el modal
+  // Clona el contenido del info-box y lo coloca en el modal
   const modalContent = document.getElementById("modal-info-content");
   modalContent.innerHTML = infoBox.innerHTML;
 
-  // Mostramos el modal
+  // Muestra el modal
   const modalOverlay = document.getElementById("modal-overlay");
   modalOverlay.style.display = "flex"; // Cambia a 'flex' para que se muestre centrado
+
+  // Agrega el listener para cerrar con la tecla ESC
+  document.addEventListener("keydown", handleEscKey);
 }
 
 // Función para cerrar el modal
 function closeModal() {
   const modalOverlay = document.getElementById("modal-overlay");
   modalOverlay.style.display = "none"; // Oculta el modal
+
+  // Remueve el listener de la tecla ESC cuando se cierra el modal
+  document.removeEventListener("keydown", handleEscKey);
+}
+
+// Función para manejar la tecla ESC y cerrar el modal
+function handleEscKey(event) {
+  if (event.key === "Escape") {
+    // Comprueba si la tecla presionada es ESC
+    closeModal(); // Llama a la función para cerrar el modal
+  }
 }
 
 /*--------------------SCROLL EN LAS ETIQUETAS A------------------------- */
@@ -76,4 +91,19 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((anchor) => {
       });
     }
   });
+});
+
+/*----------------------ICONO DE WSP----------------------------------- */
+
+// Seleccionamos el icono de WhatsApp
+const whatsappIcon = document.getElementById("whatsapp-icon");
+
+// Detectamos el scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    // Puedes ajustar el valor de 200 según prefieras
+    whatsappIcon.classList.add("visible"); // Muestra el ícono
+  } else {
+    whatsappIcon.classList.remove("visible"); // Oculta el ícono
+  }
 });
