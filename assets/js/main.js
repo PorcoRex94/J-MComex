@@ -58,3 +58,22 @@ function closeModal() {
   const modalOverlay = document.getElementById("modal-overlay");
   modalOverlay.style.display = "none"; // Oculta el modal
 }
+
+/*--------------------SCROLL EN LAS ETIQUETAS A------------------------- */
+
+// Selecciona todos los enlaces de navegación con href que empieza con #
+document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 50, // Ajusta el valor si quieres un margen superior
+        behavior: "smooth", // Hace el scroll suave
+      });
+    }
+  });
+});

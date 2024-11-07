@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --amarillo: #cfaa5d;
   --negro: #131312;
@@ -28,6 +32,7 @@
 .logo-img {
   width: 100px;
   height: auto;
+  transition: width 0.3s ease, height 0.3s ease; /* Transición en ambas dimensiones */
 }
 
 #header {
@@ -40,21 +45,21 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease, padding 0.3s ease;
   padding-left: 50px;
   padding-right: 50px;
+  overflow: hidden; /* Para evitar que el logo sobresalga */
 }
 
 #header.header-small {
-  transition: all 0.3s ease;
   height: 65px;
   padding-left: 35px;
+  padding-right: 35px;
   opacity: 0.9;
 }
 
 #header.header-small .logo-img {
-  width: 65px;
-  transition: all 0.3s ease;
+  width: 75px;
 }
 
 /*-----------------NAVBAR---------------------*/
