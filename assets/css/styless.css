@@ -621,13 +621,12 @@ html {
 /*-----------Icono de WSP--------------------------*/
 
 #whatsapp-icon {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 50px; /* Ajusta el tamaño según prefieras */
+  width: 50px;
   height: 50px;
-  z-index: 1000; /* Asegura que quede sobre el contenido */
+  z-index: 1000;
 }
 
 #whatsapp-icon img {
@@ -635,6 +634,41 @@ html {
   height: auto;
 }
 
-#whatsapp-icon.visible {
-  display: block;
+/*---------------------------------FOOTER---------------------------------------------*/
+
+.footer {
+  background-color: var(--negro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding-left: 35px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 190px;
+}
+
+.logo-footer {
+  width: 75px;
+}
+
+.footer-a {
+  color: var(--amarillo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-footer {
+  width: 20px;
+}
+
+.p-footer {
+  width: 100%;
+  text-align: center;
+  color: var(--amarillo);
 }

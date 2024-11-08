@@ -76,16 +76,3 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((anchor) => {
 });
 
 /*----------------------ICONO DE WSP----------------------------------- */
-
-// Seleccionamos el icono de WhatsApp
-const whatsappIcon = document.getElementById("whatsapp-icon");
-
-// Detectamos el scroll
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 200) {
-    // Puedes ajustar el valor de 200 según prefieras
-    whatsappIcon.classList.add("visible"); // Muestra el ícono
-  } else {
-    whatsappIcon.classList.remove("visible"); // Oculta el ícono
-  }
-});
