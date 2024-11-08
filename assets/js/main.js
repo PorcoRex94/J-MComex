@@ -1,21 +1,3 @@
-/*-----------------Simula que se escribe el texto--------------*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const text = "NO LIMITES TUS DESAFÍOS, DESAFIÁ TUS LIMITES CON J&M";
-  const typingSpeed = 100; // Velocidad en milisegundos por letra
-  let index = 0;
-
-  function typeWriter() {
-    if (index < text.length) {
-      document.getElementById("typing-text").innerHTML += text.charAt(index);
-      index++;
-      setTimeout(typeWriter, typingSpeed);
-    }
-  }
-
-  typeWriter();
-});
-
 /* ------------------Achica el Header--------------------*/
 
 const header = document.getElementById("header");
