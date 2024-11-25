@@ -76,3 +76,5 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((anchor) => {
 });
 
 /*----------------------ICONO DE WSP----------------------------------- */
+
+/*----------------------TRADUCTOR INGLES--------------------------------------- */

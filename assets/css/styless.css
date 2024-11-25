@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gothic+A1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -131,6 +131,11 @@ html {
   color: white;
 }
 
+.jm-blanco {
+  position: relative;
+  top: 13%;
+}
+
 .logo img {
   max-width: 400px;
   margin-bottom: 20px;
@@ -254,6 +259,8 @@ html {
   height: 70px;
   background-color: var(--negro);
   color: var(--amarillo);
+  font-family: "Playfair Display SC";
+  font-size: 1.4rem;
 }
 
 .img-hero {
@@ -285,9 +292,9 @@ html {
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   gap: 50px;
 }
 
@@ -296,6 +303,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+  width: 70%;
 }
 
 .text-nosotros {
@@ -304,8 +313,23 @@ html {
   font-family: "barlow condensed";
   font-weight: 400;
   line-height: 2rem;
-  width: 50%;
+  width: 100%;
   text-align: justify;
+}
+
+.especial-nosotros {
+  display: flex;
+  gap: 6px;
+}
+
+.img-nosotros {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-logo-nosotros {
+  width: 275px;
 }
 
 /*----------------SECTION SERVICIOS-----------------*/
@@ -460,8 +484,27 @@ html {
   font-size: 2rem;
 }
 
+.especial {
+  position: relative;
+  left: 0.5%;
+  margin-right: 50px;
+}
+
+.especial-trading {
+  margin-right: 150px;
+}
+
+.especial-logistica {
+  margin-right: 100px;
+}
+
+.especial-logistica-dos {
+  margin-right: 150px;
+}
+
 .barrita {
   font-size: 1.2rem;
+  font-family: sans-serif;
 }
 
 /*----------------------MISION Y VISION---------------------------------*/
@@ -479,7 +522,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/cejym-centrado.png"); /* Cambia por la URL de tu imagen */
+  background-image: url("../img/mvv.png"); /* Cambia por la URL de tu imagen */
   background-size: cover; /* Escala para llenar todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
@@ -548,7 +591,11 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  left: 15%;
+  transform: translateY(30%);
   width: 40%;
+  height: 30vh;
 }
 
 .container-icon {
@@ -577,6 +624,19 @@ html {
   align-items: center;
   gap: 25px;
   width: 60%;
+  position: relative;
+  right: 10%;
+}
+
+.position {
+  position: relative;
+  right: 10%;
+}
+
+.position-input {
+  position: relative;
+  right: 52%;
+  transform: translateX(50%);
 }
 
 .fcontainer {
@@ -671,4 +731,38 @@ html {
   width: 100%;
   text-align: center;
   color: var(--amarillo);
+}
+
+/*------------------------------FUENTES DE LA PÁGINA-----------------------------------*/
+
+.gothic {
+  font-family: "Gothic A1";
+}
+
+.cormorant {
+  font-family: "Cormorant Garamond";
+}
+
+.a-navbar-top {
+  font-family: "Playfair Display SC";
+}
+
+.playfair {
+  font-family: "Playfair Display SC";
+  font-size: 1.3rem;
+}
+
+.playfair-in {
+  font-family: "Playfair Display SC";
+  font-size: 1.2rem;
+}
+
+.servicios-cormorant {
+  font-family: "Cormorant Garamond";
+  font-size: 1.2rem;
+}
+
+.servicios-cormorant-in {
+  font-family: "Cormorant Garamond";
+  font-size: 1.1rem;
 }
