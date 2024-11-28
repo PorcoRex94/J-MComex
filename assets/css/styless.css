@@ -266,7 +266,7 @@ html {
 .img-hero {
   position: relative;
   width: 100vw;
-  height: fit-content;
+  height: 95vh;
   background: url("../img/img-nosotros-puerto.png") no-repeat center
     center/cover;
   background-attachment: fixed;
