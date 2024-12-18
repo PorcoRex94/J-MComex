@@ -105,10 +105,27 @@ menuBtn.addEventListener("click", () => {
 
 // Cerrar el menú al hacer clic en cualquier enlace
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navbar.classList.remove("visible"); // Cerrar el menú
-    body.classList.remove("no-scroll"); // Desbloquear el scroll
-    animateBars();
+  link.addEventListener("click", (e) => {
+    // Previene el comportamiento por defecto del enlace
+    e.preventDefault();
+
+    // Obtén el ID del destino desde el atributo href
+    const targetId = link.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    // Si existe el destino, desplazarse suavemente
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Cierra el menú y desbloquea el scroll
+    navbar.classList.remove("visible");
+    body.classList.remove("no-scroll");
+
+    // Llama a animateBars() si necesitas animar el botón hamburguesa
+    if (typeof animateBars === "function") {
+      animateBars();
+    }
   });
 });
 
