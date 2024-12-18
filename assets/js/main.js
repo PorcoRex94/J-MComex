@@ -92,41 +92,46 @@ function animateBars() {
 /*---------------------------Mostrar el Menu responsive------------------*/
 
 // Selección de elementos
-const menuBtn = document.querySelector(".bars__menu"); // Botón hamburguesa
-const navbar = document.querySelector(".navbar-top"); // Contenedor del menú
-const body = document.body; // Cuerpo para bloquear/desbloquear scroll
-const navLinks = document.querySelectorAll(".a-navbar-top"); // Enlaces del menú
+const menuBtn = document.querySelector(".bars__menu");
+const navbar = document.querySelector(".navbar-top");
+const body = document.body;
 
-// Abrir/cerrar el menú al hacer clic en el botón de hamburguesa
-menuBtn.addEventListener("click", () => {
-  navbar.classList.toggle("visible"); // Mostrar/ocultar menú
-  body.classList.toggle("no-scroll"); // Bloquear/desbloquear scroll
-});
-
-// Cerrar el menú al hacer clic en cualquier enlace
-navLinks.forEach((link) => {
+// Selecciona todos los enlaces del navbar
+document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
-    // Previene el comportamiento por defecto del enlace
-    e.preventDefault();
+    e.preventDefault(); // Evita el comportamiento por defecto
 
-    // Obtén el ID del destino desde el atributo href
-    const targetId = link.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
+    const targetId = link.getAttribute("href").substring(1); // Quita el #
+    const targetElement = document.getElementById(targetId);
 
-    // Si existe el destino, desplazarse suavemente
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
+      console.log(`Desplazándose a: ${targetId}`);
 
-    // Cierra el menú y desbloquea el scroll
-    navbar.classList.remove("visible");
-    body.classList.remove("no-scroll");
+      const headerHeight = document.querySelector("#header").offsetHeight; // Altura del header
+      const targetPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY;
 
-    // Llama a animateBars() si necesitas animar el botón hamburguesa
-    if (typeof animateBars === "function") {
-      animateBars();
+      // Realiza el desplazamiento suave
+      window.scrollTo({
+        top: targetPosition - headerHeight, // Ajuste dinámico por la altura del header
+        behavior: "smooth",
+      });
+
+      // Cierra el menú si está en modo responsivo
+      if (navbar.classList.contains("visible")) {
+        navbar.classList.remove("visible");
+        body.classList.remove("no-scroll");
+      }
+    } else {
+      console.error(`Elemento no encontrado: ${targetId}`);
     }
   });
+});
+
+// Abrir/cerrar el menú de hamburguesa
+menuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("visible");
+  body.classList.toggle("no-scroll");
 });
 
 /*----------------------TRADUCTOR INGLES--------------------------------------- */
