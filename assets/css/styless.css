@@ -913,4 +913,10 @@ i {
     font-size: 1rem;
     transition: background-color 0.3s ease;
   }
+
+  .no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%; /* Evita el desplazamiento horizontal */
+  }
 }
