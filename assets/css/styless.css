@@ -99,6 +99,40 @@ i {
   gap: 13px;
 }
 
+.bars__menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%) scale(1);
+  cursor: pointer;
+}
+
+.bars__menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--amarillo);
+  margin-top: 6px;
+  transform-origin: 0px 100%;
+  transition: all 600ms;
+}
+
+.activeline1__bars__menu {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars__menu {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.activeline3__bars__menu {
+  transform: rotate(-45deg) translate(-4px, 2px);
+}
+
 /*------------------MAIN----------------------------*/
 
 #main {
@@ -824,4 +858,59 @@ i {
 .servicios-cormorant-in {
   font-family: "Cormorant Garamond";
   font-size: 1.1rem;
+}
+
+/*------------------------MEDIA-QUERIES------------------------------*/
+
+@media (max-width: 992px) {
+  .bars__menu {
+    display: block;
+  }
+  .bars__menu {
+    display: block;
+    cursor: pointer;
+    z-index: 11; /* Para asegurarse de que el botón esté siempre encima */
+  }
+
+  /* Ocultar el menú por defecto */
+  .navbar-top {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--negro);
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  /* Mostrar el menú cuando se active */
+  .navbar-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ul-navbar-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .li-navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .a-navbar-top {
+    display: flex;
+    gap: 15px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
 }

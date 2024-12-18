@@ -75,6 +75,41 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((anchor) => {
   });
 });
 
-/*----------------------ICONO DE WSP----------------------------------- */
+/*----------------------Menu Hamburguesa-------------------------------- */
+
+document.querySelector(".bars__menu").addEventListener("click", animateBars);
+
+var line1__bars = document.querySelector(".line1__bars__menu");
+var line2__bars = document.querySelector(".line2__bars__menu");
+var line3__bars = document.querySelector(".line3__bars__menu");
+
+function animateBars() {
+  line1__bars.classList.toggle("activeline1__bars__menu");
+  line2__bars.classList.toggle("activeline2__bars__menu");
+  line3__bars.classList.toggle("activeline3__bars__menu");
+}
+
+/*---------------------------Mostrar el Menu responsive------------------*/
+
+// Selección de elementos
+const menuBtn = document.querySelector(".bars__menu"); // Botón hamburguesa
+const navbar = document.querySelector(".navbar-top"); // Contenedor del menú
+const body = document.body; // Cuerpo para bloquear/desbloquear scroll
+const navLinks = document.querySelectorAll(".a-navbar-top"); // Enlaces del menú
+
+// Abrir/cerrar el menú al hacer clic en el botón de hamburguesa
+menuBtn.addEventListener("click", () => {
+  navbar.classList.toggle("visible"); // Mostrar/ocultar menú
+  body.classList.toggle("no-scroll"); // Bloquear/desbloquear scroll
+});
+
+// Cerrar el menú al hacer clic en cualquier enlace
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("visible"); // Cerrar el menú
+    body.classList.remove("no-scroll"); // Desbloquear el scroll
+    animateBars();
+  });
+});
 
 /*----------------------TRADUCTOR INGLES--------------------------------------- */
