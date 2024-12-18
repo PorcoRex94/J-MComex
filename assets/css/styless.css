@@ -24,7 +24,6 @@ html {
 
 #body {
   overflow-x: hidden;
-  width: 100vw;
 }
 
 /*------------------HEADER--------------------*/
@@ -915,6 +914,7 @@ i {
   }
 
   .no-scroll {
+    position: fixed;
     overflow: hidden;
     width: 100%;
   }
