@@ -89,7 +89,7 @@ function animateBars() {
   line3__bars.classList.toggle("activeline3__bars__menu");
 }
 
-/*---------------------------Mostrar el Menu responsive------------------*/
+/*---------------------------Mostrar el Menu responsive--------------------*/
 
 // Selección de elementos
 const menuBtn = document.querySelector(".bars__menu");
@@ -106,16 +106,6 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((link) => {
 
     if (targetElement) {
       console.log(`Desplazándose a: ${targetId}`);
-
-      const headerHeight = document.querySelector("#header").offsetHeight; // Altura del header
-      const targetPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY;
-
-      // Realiza el desplazamiento suave
-      window.scrollTo({
-        top: targetPosition - headerHeight, // Ajuste dinámico por la altura del header
-        behavior: "smooth",
-      });
 
       // Cierra el menú si está en modo responsivo
       if (navbar.classList.contains("visible")) {
