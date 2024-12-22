@@ -198,6 +198,9 @@ i {
 }
 
 .logo img {
+  position: relative;
+  top: -5%;
+  left: 35%;
   max-width: 400px;
   margin-bottom: 20px;
   border-radius: 100px;
@@ -232,7 +235,7 @@ i {
 
 .hache-uno {
   position: relative;
-  top: 35%;
+  top: 20%;
   color: white;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -273,7 +276,7 @@ i {
 
 .button-hero {
   position: relative;
-  top: 50%;
+  top: 20%;
   right: 3%;
   border-radius: 5px;
   padding: 10px;
@@ -304,7 +307,7 @@ i {
 .p-welcome {
   position: relative;
   left: 30%;
-  top: 25%;
+  top: 40%;
   font-size: 1.5rem;
 }
 
@@ -579,7 +582,20 @@ i {
   transform: translate(-50%, -50%); /* Centra el contenedor */
   width: 1000px;
   height: 750px; /* Puedes ajustar este tamaño según lo que necesites */
-  background-image: url("../img/mvv.png"); /* Cambia por la URL de tu imagen */
+  background-image: url("../img/mvv-es.png"); /* Cambia por la URL de tu imagen */
+  background-size: cover; /* Escala para llenar todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+}
+
+.backgroundmyveng {
+  position: absolute; /* Fija el contenedor a la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenedor */
+  width: 1000px;
+  height: 750px; /* Puedes ajustar este tamaño según lo que necesites */
+  background-image: url("../img/mvv-eng.png"); /* Cambia por la URL de tu imagen */
   background-size: cover; /* Escala para llenar todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
