@@ -340,7 +340,7 @@ i {
 .img-hero {
   position: relative;
   width: 100vw;
-  height: 105vh;
+  height: 97vh;
   background: url("../img/img_nosotros_grande.png") no-repeat center
     center/cover;
   display: flex;
@@ -1071,7 +1071,8 @@ i {
   }
 
   .img-hero {
-    border: 10px solid yellow;
+    height: 95vh;
+    background: url("../img/fnd_med.png") no-repeat center/cover;
   }
 }
 
@@ -1157,12 +1158,20 @@ i {
   .position-input {
     right: 40%;
   }
+
+  .img-hero {
+    height: 105vh;
+  }
 }
 
 @media (max-width: 900px) {
   .line,
   .line-bottom {
     width: 730px;
+  }
+
+  .img-hero {
+    height: 110vh;
   }
 }
 
@@ -1186,12 +1195,6 @@ i {
 
   .position-input {
     right: 39%;
-  }
-
-  .img-hero {
-    height: 1000px;
-    background: url("../img/fondo__nosotros__logo.png") no-repeat center/contain;
-    border: 10px solid red;
   }
 }
 
