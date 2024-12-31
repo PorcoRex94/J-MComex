@@ -995,10 +995,8 @@ i {
   }
 
   .img-hero {
-    height: 100vh;
-    background: url("../img/fonto__completo__logo__terminado.png") no-repeat
-      center/cover;
-    border: 5px solid red;
+    height: 95vh;
+    background: url("../img/img_nosotros_medianoo.png") no-repeat center/cover;
   }
 }
 
@@ -1070,6 +1068,10 @@ i {
 
   .logo-container {
     gap: 50px;
+  }
+
+  .img-hero {
+    border: 10px solid yellow;
   }
 }
 
