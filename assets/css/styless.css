@@ -175,7 +175,7 @@ i {
 .overlay {
   position: absolute;
   top: 20%;
-  left: 0%;
+  left: -1%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -199,11 +199,11 @@ i {
 
 .logo img {
   position: relative;
-  top: 8%;
-  left: 35%;
+  top: 7%;
+  left: 40%;
   max-width: 400px;
-  margin-bottom: 20px;
   border-radius: 100px;
+  animation: zoomIn 1.5s ease-out forwards;
 }
 
 .text {
@@ -340,12 +340,12 @@ i {
 .img-hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  background: url("../img/fondonosotros.png") no-repeat center center/cover;
+  height: 105vh;
+  background: url("../img/img_nosotros_grande.png") no-repeat center
+    center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .hero-content {
@@ -869,16 +869,21 @@ i {
   .position-input {
     right: 50%;
   }
+
+  .logo img {
+    top: 6%;
+    left: 37%;
+  }
+
+  .overlay {
+    left: -5%;
+  }
 }
 
 @media (max-width: 1400px) {
   .line,
   .line-bottom {
     width: 1200px;
-  }
-
-  #whatsapp-icon {
-    display: none;
   }
 }
 
@@ -888,13 +893,8 @@ i {
     width: 1150px;
   }
 
-  .logo img {
-    display: none;
-  }
-
   .overlay {
-    top: 12%;
-    left: 27%;
+    left: -7%;
   }
 
   .position-input {
@@ -915,12 +915,41 @@ i {
   .line-bottom {
     width: 1100px;
   }
+
+  .overlay {
+    left: -10%;
+  }
+
+  .logo img {
+    left: 45%;
+  }
 }
 
 @media (max-width: 1250px) {
   .line,
   .line-bottom {
     width: 1050px;
+  }
+
+  .jm {
+    font-size: 4.9rem;
+  }
+
+  .p-welcome {
+    font-size: 1.3rem;
+  }
+
+  .hache-uno {
+    font-size: 2rem;
+  }
+
+  .overlay {
+    top: 20%;
+    left: -8%;
+  }
+
+  .logo img {
+    left: 38%;
   }
 }
 
@@ -937,6 +966,14 @@ i {
   .logo-container {
     gap: 95px;
   }
+
+  .logo img {
+    max-width: 380px;
+  }
+
+  .overlay {
+    left: -10%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -948,6 +985,21 @@ i {
   .position-input {
     right: 45%;
   }
+
+  .logo img {
+    display: none;
+  }
+
+  .overlay {
+    left: 21%;
+  }
+
+  .img-hero {
+    height: 100vh;
+    background: url("../img/fonto__completo__logo__terminado.png") no-repeat
+      center/cover;
+    border: 5px solid red;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -955,29 +1007,26 @@ i {
   .line-bottom {
     width: 900px;
   }
-}
 
-@media (max-width: 1150px) {
-  .overlay {
-    left: 25%;
+  .position-input {
+    right: 43%;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .img-hero {
-    height: 100vh;
-  }
-
+@media (max-width: 1280px) {
   .text-nosotros-container {
     margin: 3rem 0 3rem 2rem;
+    padding-top: 5rem;
   }
 
   .container-first-row {
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 1.5rem 0;
     max-width: 1024px;
+  }
+
+  .column-right {
+    margin-left: 450px;
   }
 
   .container-content-text {
@@ -999,7 +1048,37 @@ i {
   }
 }
 
+@media (max-width: 1050px) {
+  .line,
+  .line-bottom {
+    width: 850px;
+  }
+
+  .container-first-row {
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+  }
+
+  .column-right {
+    margin-left: 0px;
+  }
+
+  .overlay {
+    left: 18%;
+  }
+
+  .logo-container {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 992px) {
+  .line,
+  .line-bottom {
+    width: 800px;
+  }
+
   .bars__menu {
     display: block;
     cursor: pointer;
@@ -1053,9 +1132,176 @@ i {
     position: absolute;
     overflow: hidden;
   }
+
+  .position-input {
+    right: 41%;
+  }
+
+  .container-icon {
+    padding-right: 250px;
+  }
+}
+
+@media (max-width: 960px) {
+  .line,
+  .line-bottom {
+    width: 770px;
+  }
+
+  .backgroundmyv {
+    width: 768px;
+  }
+
+  .position-input {
+    right: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .line,
+  .line-bottom {
+    width: 730px;
+  }
+}
+
+@media (max-width: 860px) {
+  .line,
+  .line-bottom {
+    width: 700px;
+  }
+  .overlay {
+    left: 13%;
+  }
+
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .footer {
+    gap: 35px;
+    padding-left: 0px;
+  }
+
+  .position-input {
+    right: 39%;
+  }
+
+  .img-hero {
+    height: 1000px;
+    background: url("../img/fondo__nosotros__logo.png") no-repeat center/contain;
+    border: 10px solid red;
+  }
+}
+
+@media (max-width: 800px) {
+  .line,
+  .line-bottom {
+    width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .line,
+  .line-bottom {
+    width: 600px;
+  }
+  .overlay {
+    left: 9%;
+  }
+
+  .container-info {
+    flex-direction: column;
+    position: relative;
+    left: 35%;
+    padding-top: 0px;
+  }
+
+  .container-info-container {
+    left: 12%;
+    transform: translateY(10%);
+  }
+
+  .position-input {
+    right: 37%;
+  }
+
+  .backgroundmyv {
+    width: 680px;
+  }
+}
+
+@media (max-width: 700px) {
+  .line,
+  .line-bottom {
+    width: 550px;
+  }
+}
+
+@media (max-width: 680px) {
+  .line,
+  .line-bottom {
+    width: 530px;
+  }
+  .backgroundmyv {
+    width: 550px;
+  }
+
+  .overlay {
+    left: 3%;
+  }
+}
+
+@media (max-width: 640px) {
+  .line,
+  .line-bottom {
+    width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .line,
+  .line-bottom {
+    width: 450px;
+  }
+  .position-input {
+    right: 35%;
+  }
+}
+
+@media (max-width: 550px) {
+  .line,
+  .line-bottom {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .line,
+  .line-bottom {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .line,
+  .line-bottom {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .line,
+  .line-bottom {
+    width: 250px;
+  }
 }
 
 @media (max-width: 360px) {
+  .line,
+  .line-bottom {
+    width: 210px;
+  }
+
   #header.header-small {
     height: 50px;
     padding-left: 10px;
