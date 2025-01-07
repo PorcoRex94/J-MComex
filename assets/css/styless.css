@@ -990,6 +990,10 @@ i {
     display: none;
   }
 
+  .line-bottom {
+    left: 8%;
+  }
+
   .overlay {
     left: 21%;
   }
@@ -1254,6 +1258,10 @@ i {
     width: 550px;
   }
 
+  .line-bottom {
+    left: 10%;
+  }
+
   .img-hero {
     background: url("../img/img_nosotros_chica_fondo.png") no-repeat
       center/cover;
@@ -1281,6 +1289,10 @@ i {
     width: 480px;
   }
 
+  .line-bottom {
+    left: 12%;
+  }
+
   .img-hero {
     height: 160vh;
   }
@@ -1304,6 +1316,10 @@ i {
   .line,
   .line-bottom {
     width: 400px;
+  }
+
+  .line-bottom {
+    left: 14%;
   }
 
   .img-hero {
@@ -1332,6 +1348,10 @@ i {
   .line,
   .line-bottom {
     width: 300px;
+  }
+
+  .line-bottom {
+    left: 16%;
   }
 
   .img-hero {
