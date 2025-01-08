@@ -440,7 +440,7 @@ i {
   background-color: var(--amarillo);
   border-radius: 8px;
   margin-top: 10px;
-  color: #333;
+  width: 100%;
 }
 
 .info-button {
@@ -1252,6 +1252,11 @@ i {
 
   .info-box {
     background-color: white;
+  }
+
+  .column-left,
+  .column-right {
+    width: 95%;
   }
 
   .modal-overlay {
