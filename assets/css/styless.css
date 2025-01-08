@@ -1267,6 +1267,10 @@ i {
   .img-hero {
     height: 135vh;
   }
+
+  .modal-overlay {
+    display: block;
+  }
 }
 
 @media (max-width: 700px) {
