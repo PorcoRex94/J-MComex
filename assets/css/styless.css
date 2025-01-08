@@ -1268,33 +1268,32 @@ i {
     height: 135vh;
   }
 
-  /* Modal superpuesto y centrado */
   .modal-overlay {
     display: none; /* Oculto por defecto */
-    position: fixed;
+    position: fixed; /* Cubre toda la pantalla */
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Encima del contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    z-index: 1000;
   }
 
   .modal-overlay.active {
-    display: flex; /* Mostrar modal al activarlo */
+    display: flex; /* Mostrar modal */
   }
 
   .modal-content {
     background: white;
     padding: 20px;
-    max-width: 90%; /* Ancho máximo en móvil */
+    max-width: 90%; /* Ancho máximo en móviles */
     width: 600px; /* Ancho en pantallas grandes */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
     text-align: center;
+    position: relative; /* Necesario para el botón de cierre */
   }
 
   .close-modal {
@@ -1305,12 +1304,6 @@ i {
     border: none;
     font-size: 18px;
     cursor: pointer;
-  }
-
-  /* Para contenido de texto */
-  .modal-text {
-    line-height: 1.5rem;
-    text-align: justify;
   }
 }
 

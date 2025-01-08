@@ -129,23 +129,27 @@ menuBtn.addEventListener("click", () => {
 function toggleInfo(button) {
   const modalOverlay = document.querySelector(".modal-overlay");
   const modalContent = modalOverlay.querySelector("#modal-info-content");
-  const infoBox = button.nextElementSibling; // Obtiene el contenido del modal relacionado
+  const infoBox = button.nextElementSibling; // Obtener el contenido relacionado al botón
 
-  // Copiar el contenido del modal seleccionado
+  // Copiar el contenido del info-box al modal
   modalContent.innerHTML = infoBox.innerHTML;
 
-  // Mostrar el modal centrado
+  // Activar el overlay y centrar el modal
   modalOverlay.classList.add("active");
+
+  // Bloquear el scroll del fondo
   document.body.classList.add("modal-open");
 }
 
 function closeModal() {
   const modalOverlay = document.querySelector(".modal-overlay");
+
+  // Ocultar el overlay y permitir scroll del fondo
   modalOverlay.classList.remove("active");
   document.body.classList.remove("modal-open");
 }
 
-// Asignar la funcionalidad al overlay para cerrar el modal
+// Cerrar el modal al hacer clic fuera de él
 document.querySelector(".modal-overlay").addEventListener("click", (event) => {
   if (event.target.classList.contains("modal-overlay")) {
     closeModal();
