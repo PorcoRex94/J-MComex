@@ -124,4 +124,14 @@ menuBtn.addEventListener("click", () => {
   body.classList.toggle("no-scroll");
 });
 
-/*----------------------TRADUCTOR INGLES--------------------------------------- */
+/*-------------------Centrar los modales en movil--------------------------- */
+
+function toggleInfo(button) {
+  const modal = button.nextElementSibling;
+  modal.style.display = modal.style.display === "block" ? "none" : "block";
+
+  if (window.innerWidth <= 768) {
+    // Si es móvil
+    modal.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
