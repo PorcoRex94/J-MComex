@@ -1268,39 +1268,49 @@ i {
     height: 135vh;
   }
 
-  .info-box {
-    display: none; /* Oculto por defecto */
-    position: absolute; /* Posición relativa al botón */
-    width: 90%; /* Ancho responsivo */
-    left: 5%; /* Centrado horizontalmente */
-    background-color: var(--amarillo);
-    color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 10; /* Sobre el contenido principal */
-  }
-
-  .info-box.active {
-    display: block; /* Se muestra al activarse */
-  }
-
-  .info-button {
-    position: relative; /* Base para la posición del modal */
-  }
-
+  /* Modal superpuesto y centrado */
   .modal-overlay {
-    display: none; /* Fondo para superposición */
+    display: none; /* Oculto por defecto */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5; /* Menor que la info-box */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Encima del contenido */
   }
 
   .modal-overlay.active {
-    display: block;
+    display: flex; /* Mostrar modal al activarlo */
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    max-width: 90%; /* Ancho máximo en móvil */
+    width: 600px; /* Ancho en pantallas grandes */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  /* Para contenido de texto */
+  .modal-text {
+    line-height: 1.5rem;
+    text-align: justify;
   }
 }
 

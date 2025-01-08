@@ -127,37 +127,27 @@ menuBtn.addEventListener("click", () => {
 /*-------------------Centrar los modales en movil--------------------------- */
 
 function toggleInfo(button) {
-  const infoBox = button.nextElementSibling; // Modal relacionado
-  const overlay = document.querySelector(".modal-overlay");
+  const modalOverlay = document.querySelector(".modal-overlay");
+  const modalContent = modalOverlay.querySelector("#modal-info-content");
+  const infoBox = button.nextElementSibling; // Obtiene el contenido del modal relacionado
 
-  // Verificar si el modal ya está visible
-  const isVisible = infoBox.classList.contains("active");
+  // Copiar el contenido del modal seleccionado
+  modalContent.innerHTML = infoBox.innerHTML;
 
-  // Cerrar todos los modales abiertos
-  document
-    .querySelectorAll(".info-box")
-    .forEach((box) => box.classList.remove("active"));
-  overlay.classList.remove("active");
-
-  // Si el modal no estaba visible, abrirlo
-  if (!isVisible) {
-    // Activar el modal
-    infoBox.classList.add("active");
-    overlay.classList.add("active");
-
-    // Asegurarse de que el modal aparezca justo debajo del botón
-    const buttonRect = button.getBoundingClientRect();
-    const infoBoxRect = infoBox.getBoundingClientRect();
-
-    infoBox.style.top = `${window.scrollY + buttonRect.bottom}px`;
-    infoBox.style.left = `${buttonRect.left}px`;
-  }
+  // Mostrar el modal centrado
+  modalOverlay.classList.add("active");
+  document.body.classList.add("modal-open");
 }
 
-// Cerrar modales al hacer clic en el overlay
-document.querySelector(".modal-overlay").addEventListener("click", () => {
-  document
-    .querySelectorAll(".info-box")
-    .forEach((box) => box.classList.remove("active"));
-  document.querySelector(".modal-overlay").classList.remove("active");
+function closeModal() {
+  const modalOverlay = document.querySelector(".modal-overlay");
+  modalOverlay.classList.remove("active");
+  document.body.classList.remove("modal-open");
+}
+
+// Asignar la funcionalidad al overlay para cerrar el modal
+document.querySelector(".modal-overlay").addEventListener("click", (event) => {
+  if (event.target.classList.contains("modal-overlay")) {
+    closeModal();
+  }
 });
