@@ -1046,7 +1046,7 @@ i {
   .container-first-row {
     justify-content: center;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 150px;
   }
 
   .column-right {
@@ -1304,12 +1304,6 @@ i {
 
   .img-hero {
     height: 170vh;
-  }
-
-  .info-box.expanded {
-    display: block;
-    max-height: 500px;
-    opacity: 1;
   }
 
   .info-box {
