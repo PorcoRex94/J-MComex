@@ -907,6 +907,10 @@ i {
   .logo img {
     left: 38%;
   }
+
+  .text-nosotros-container {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1116,6 +1120,7 @@ i {
   }
 
   .img-hero {
+    height: 105vh;
     background: url("../img/fnd__nosotros__med.png") no-repeat center/cover;
   }
 
@@ -1156,7 +1161,7 @@ i {
   }
 
   .img-hero {
-    height: 125vh;
+    height: 115vh;
   }
 
   .img-servicios {
@@ -1201,7 +1206,7 @@ i {
   }
 
   .img-hero {
-    height: 135vh;
+    height: 123vh;
   }
 }
 
@@ -1220,9 +1225,9 @@ i {
   }
 
   .img-hero {
+    height: 100vh;
     background: url("../img/img_nosotros_chica_fondo.png") no-repeat
       center/cover;
-    height: 150vh;
   }
 
   .container-icon {
@@ -1231,6 +1236,10 @@ i {
 
   .container-info-container {
     left: 33%;
+  }
+
+  .text-nosotros-container {
+    width: 100%;
   }
 }
 @media (max-width: 680px) {
@@ -1247,14 +1256,16 @@ i {
   }
 }
 
+@media (max-width: 650px) {
+  .img-hero {
+    height: 105vh;
+  }
+}
+
 @media (max-width: 640px) {
   .line,
   .line-bottom {
     display: none;
-  }
-
-  .img-hero {
-    height: 160vh;
   }
 }
 
@@ -1269,7 +1280,7 @@ i {
   }
 
   .img-hero {
-    height: 170vh;
+    height: 85vh;
   }
 
   .info-box {
@@ -1291,24 +1302,18 @@ i {
 }
 
 @media (max-width: 550px) {
-  .img-hero {
-    height: 185vh;
-  }
-
   .backgroundmyv {
     width: 450px;
   }
-}
 
-@media (max-width: 530px) {
   .img-hero {
-    height: 195vh;
+    height: 87vh;
   }
 }
 
 @media (max-width: 500px) {
   .img-hero {
-    height: 205vh;
+    height: 93vh;
   }
 
   .container-first-row,
@@ -1317,9 +1322,15 @@ i {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .img-hero {
-    height: 215vh;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 434px) {
+  .img-hero {
+    height: 115vh;
   }
 }
 
@@ -1336,7 +1347,7 @@ i {
   }
 
   .img-hero {
-    height: 225vh;
+    height: 120vh;
   }
 
   .container-first-row,
@@ -1346,10 +1357,6 @@ i {
 }
 
 @media (max-width: 360px) {
-  .img-hero {
-    height: 235vh;
-  }
-
   #header.header-small {
     height: 50px;
     padding-left: 10px;
@@ -1359,5 +1366,9 @@ i {
 
   #header.header-small .logo-img {
     width: 45px;
+  }
+
+  .img-hero {
+    height: 130vh;
   }
 }
