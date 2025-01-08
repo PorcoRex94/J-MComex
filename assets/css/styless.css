@@ -594,19 +594,6 @@ i {
   text-align: justify;
 }
 
-/* Estilos generales del contenedor */
-.banner-container {
-  background: linear-gradient(to right, #3e3e3e, #564e4e); /* Fondo degradado */
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  position: relative;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 /* Estilos para la misión y visión */
 .container-nosotros {
   display: flex;
@@ -692,17 +679,6 @@ i {
   width: 60%;
   position: relative;
   right: 10%;
-}
-
-.position {
-  position: relative;
-  right: 10%;
-}
-
-.position-input {
-  position: relative;
-  right: 52%;
-  transform: translateX(50%);
 }
 
 .fcontainer {
@@ -850,10 +826,6 @@ i {
     width: 1250px;
   }
 
-  .position-input {
-    right: 50%;
-  }
-
   .logo img {
     top: 6%;
     left: 37%;
@@ -879,10 +851,6 @@ i {
 
   .overlay {
     left: -7%;
-  }
-
-  .position-input {
-    right: 48%;
   }
 
   .container-icon {
@@ -943,10 +911,6 @@ i {
     width: 1000px;
   }
 
-  .position-input {
-    right: 46%;
-  }
-
   .logo-container {
     gap: 95px;
   }
@@ -964,10 +928,6 @@ i {
   .line,
   .line-bottom {
     width: 950px;
-  }
-
-  .position-input {
-    right: 45%;
   }
 
   .logo img {
@@ -992,10 +952,6 @@ i {
   .line,
   .line-bottom {
     width: 900px;
-  }
-
-  .position-input {
-    right: 43%;
   }
 }
 
@@ -1127,14 +1083,6 @@ i {
     position: absolute;
     overflow: hidden;
   }
-
-  .position-input {
-    right: 41%;
-  }
-
-  .container-icon {
-    padding-right: 250px;
-  }
 }
 
 @media (max-width: 960px) {
@@ -1145,10 +1093,6 @@ i {
 
   .backgroundmyv {
     width: 768px;
-  }
-
-  .position-input {
-    right: 40%;
   }
 
   .img-hero {
@@ -1185,10 +1129,6 @@ i {
     padding-left: 0px;
   }
 
-  .position-input {
-    right: 39%;
-  }
-
   .img-hero {
     height: 115vh;
     background: url("../img/fnd__med__masChica.png") no-repeat center/cover;
@@ -1214,6 +1154,7 @@ i {
   }
 
   .container-first-row {
+    padding-right: 0px;
     width: 600px;
   }
 }
@@ -1228,19 +1169,20 @@ i {
   }
 
   .container-info {
-    flex-direction: column;
     position: relative;
-    left: 35%;
+    flex-direction: column;
     padding-top: 0px;
   }
 
-  .container-info-container {
-    left: 12%;
-    transform: translateY(10%);
+  .form {
+    left: 21%;
+    transform: translateY(5%);
   }
 
-  .position-input {
-    right: 37%;
+  .container-info-container {
+    left: 43%;
+    transform: translateY(35%);
+    height: 15vh;
   }
 
   .backgroundmyv {
@@ -1268,8 +1210,12 @@ i {
     height: 150vh;
   }
 
+  .container-icon {
+    padding-right: 0px;
+  }
+
   .container-info-container {
-    left: 14%;
+    left: 33%;
   }
 }
 @media (max-width: 680px) {
@@ -1283,12 +1229,6 @@ i {
 
   .overlay {
     left: 3%;
-  }
-}
-
-@media (max-width: 650px) {
-  .container-info-container {
-    left: 16%;
   }
 }
 
@@ -1307,10 +1247,6 @@ i {
   .line,
   .line-bottom {
     width: 450px;
-  }
-
-  .position-input {
-    right: 34%;
   }
 
   .img-hero {
@@ -1334,19 +1270,11 @@ i {
   .backgroundmyv {
     width: 450px;
   }
-
-  .container-info-container {
-    left: 19%;
-  }
 }
 
 @media (max-width: 530px) {
   .img-hero {
     height: 195vh;
-  }
-
-  .position-input {
-    right: 33%;
   }
 }
 
@@ -1354,33 +1282,17 @@ i {
   .img-hero {
     height: 205vh;
   }
-
-  .container-info-container {
-    left: 22%;
-  }
 }
 
 @media (max-width: 450px) {
   .img-hero {
     height: 215vh;
   }
-
-  .position-input {
-    right: 32%;
-  }
-
-  .container-info-container {
-    left: 24%;
-  }
 }
 
 @media (max-width: 430px) {
   .h-t-s {
     width: 400px;
-  }
-
-  .position-input {
-    right: 31%;
   }
 }
 
@@ -1392,10 +1304,6 @@ i {
 
   .img-hero {
     height: 225vh;
-  }
-
-  .container-info-container {
-    left: 26%;
   }
 }
 
@@ -1413,9 +1321,5 @@ i {
 
   #header.header-small .logo-img {
     width: 45px;
-  }
-
-  .position-input {
-    right: 30%;
   }
 }
