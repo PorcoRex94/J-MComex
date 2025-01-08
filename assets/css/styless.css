@@ -236,7 +236,7 @@ i {
 
 .hache-uno {
   position: relative;
-  top: 20%;
+  top: 10%;
   color: white;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -370,9 +370,9 @@ i {
   color: var(--negro);
   font-family: "Cormorant Garamond";
   font-weight: 1000;
-  line-height: 2rem;
+  word-spacing: normal;
   width: 100%;
-  text-align: justify;
+  text-align: left;
 }
 
 .especial-nosotros {
@@ -785,6 +785,10 @@ i {
   font-family: "Sorts Mill Goudy";
 }
 
+.sorts__jm {
+  font-weight: 800;
+}
+
 .sorts {
   font-family: "Gfs Didot";
   font-weight: 400;
@@ -944,7 +948,7 @@ i {
 
   .img-hero {
     height: 95vh;
-    background: url("../img/img_nosotros_medianoo.png") no-repeat center/cover;
+    background: url("../img/fnd_med.png") no-repeat center/cover;
   }
 }
 
@@ -956,11 +960,6 @@ i {
 }
 
 @media (max-width: 1280px) {
-  .text-nosotros-container {
-    margin: 3rem 0 3rem 2rem;
-    padding-top: 5rem;
-  }
-
   .servicio-text-container {
     padding: 0.5rem 0 2rem 0;
   }
@@ -1018,9 +1017,16 @@ i {
     gap: 50px;
   }
 
-  .img-hero {
-    height: 95vh;
-    background: url("../img/fnd_med.png") no-repeat center/cover;
+  .container-first-row,
+  .container-servicios {
+    width: 950px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .column-left,
+  .column-right {
+    width: 75%;
   }
 }
 
@@ -1094,9 +1100,12 @@ i {
   .backgroundmyv {
     width: 768px;
   }
+}
 
-  .img-hero {
-    height: 105vh;
+@media (max-width: 950px) {
+  .container-first-row,
+  .container-servicios {
+    width: 850px;
   }
 }
 
@@ -1108,6 +1117,11 @@ i {
 
   .img-hero {
     background: url("../img/fnd__nosotros__med.png") no-repeat center/cover;
+  }
+
+  .column-left,
+  .column-right {
+    width: 95%;
   }
 }
 
@@ -1197,6 +1211,10 @@ i {
     width: 550px;
   }
 
+  .overlay {
+    left: 4%;
+  }
+
   .line-bottom {
     left: 10%;
   }
@@ -1246,17 +1264,16 @@ i {
     width: 450px;
   }
 
+  .overlay {
+    left: -4%;
+  }
+
   .img-hero {
     height: 170vh;
   }
 
   .info-box {
     background-color: white;
-  }
-
-  .column-left,
-  .column-right {
-    width: 95%;
   }
 
   .modal-overlay {
@@ -1266,6 +1283,10 @@ i {
   .container-first-row,
   .container-servicios {
     width: 500px;
+  }
+
+  .text-nosotros {
+    font-size: 1.2rem;
   }
 }
 
