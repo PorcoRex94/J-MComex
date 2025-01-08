@@ -124,21 +124,41 @@ menuBtn.addEventListener("click", () => {
   body.classList.toggle("no-scroll");
 });
 
-/*-------------------Centrar los modales en movil--------------------------- */
+/*-------------------Acordeon de servicios --------------------------- */
 
 function toggleInfo(button) {
-  const modalOverlay = document.getElementById("modal-overlay");
-  const modalContent = document.getElementById("modal-info-content");
+  const screenWidth = window.innerWidth; // Detectar ancho de pantalla
+  const infoBox = button.nextElementSibling; // El siguiente elemento (info-box)
 
-  // Copia el contenido de la información desde el botón activado
-  const infoBox = button.nextElementSibling;
-  modalContent.innerHTML = infoBox.innerHTML;
+  if (screenWidth > 600) {
+    // Comportamiento para pantallas grandes: modal
+    const modalOverlay = document.querySelector("#modal-overlay");
+    const modalContent = document.querySelector("#modal-info-content");
 
-  // Mostrar el overlay y centrar
-  modalOverlay.style.display = "flex";
+    // Llenar el contenido del modal
+    modalContent.innerHTML = infoBox.innerHTML;
+
+    // Mostrar el modal
+    modalOverlay.classList.add("active");
+  } else {
+    // Comportamiento para pantallas pequeñas: acordeón
+    if (infoBox.style.display === "block") {
+      // Ocultar si ya está abierto
+      infoBox.style.display = "none";
+    } else {
+      // Ocultar otros info-box abiertos (opcional)
+      const allInfoBoxes = document.querySelectorAll(".info-box");
+      allInfoBoxes.forEach((box) => {
+        box.style.display = "none";
+      });
+
+      // Mostrar el info-box actual
+      infoBox.style.display = "block";
+    }
+  }
 }
 
 function closeModal() {
-  const modalOverlay = document.getElementById("modal-overlay");
-  modalOverlay.style.display = "none";
+  const modalOverlay = document.querySelector("#modal-overlay");
+  modalOverlay.classList.remove("active");
 }

@@ -508,6 +508,10 @@ i {
   z-index: 1000;
 }
 
+.modal-overlay.active {
+  display: flex;
+}
+
 .modal-content {
   background: rgb(255, 255, 255);
   padding: 20px;
@@ -1300,6 +1304,20 @@ i {
 
   .img-hero {
     height: 170vh;
+  }
+
+  .info-box.expanded {
+    display: block;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .info-box {
+    background-color: white;
+  }
+
+  .modal-overlay {
+    display: none;
   }
 }
 
