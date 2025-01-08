@@ -22,7 +22,7 @@
 
 #body {
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 /*------------------HEADER--------------------*/
@@ -1149,11 +1149,8 @@ i {
     display: none;
   }
 
+  .container-first-row,
   .container-servicios {
-    width: 600px;
-  }
-
-  .container-first-row {
     padding-right: 0px;
     width: 600px;
   }
@@ -1260,6 +1257,11 @@ i {
   .modal-overlay {
     display: none;
   }
+
+  .container-first-row,
+  .container-servicios {
+    width: 500px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1281,6 +1283,11 @@ i {
 @media (max-width: 500px) {
   .img-hero {
     height: 205vh;
+  }
+
+  .container-first-row,
+  .container-servicios {
+    width: 400px;
   }
 }
 
@@ -1304,6 +1311,11 @@ i {
 
   .img-hero {
     height: 225vh;
+  }
+
+  .container-first-row,
+  .container-servicios {
+    width: 360px;
   }
 }
 
