@@ -111,6 +111,9 @@ document.querySelectorAll('.a-navbar-top[href^="#"]').forEach((link) => {
       if (navbar.classList.contains("visible")) {
         navbar.classList.remove("visible");
         body.classList.remove("no-scroll");
+
+        // Reinicia el menú hamburguesa (restaura las líneas)
+        resetHamburgerMenu();
       }
     } else {
       console.error(`Elemento no encontrado: ${targetId}`);
@@ -123,6 +126,13 @@ menuBtn.addEventListener("click", () => {
   navbar.classList.toggle("visible");
   body.classList.toggle("no-scroll");
 });
+
+// Función para reiniciar el estado del menú hamburguesa
+function resetHamburgerMenu() {
+  line1__bars.classList.remove("activeline1__bars__menu");
+  line2__bars.classList.remove("activeline2__bars__menu");
+  line3__bars.classList.remove("activeline3__bars__menu");
+}
 
 /*-------------------Acordeon de servicios --------------------------- */
 
