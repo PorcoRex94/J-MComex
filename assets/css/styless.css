@@ -58,7 +58,7 @@ i {
   transition: height 0.3s ease, padding 0.3s ease;
   padding-left: 50px;
   padding-right: 50px;
-  overflow: hidden; /* Para evitar que el logo sobresalga */
+  overflow-y: hidden; /* Para evitar que el logo sobresalga */
 }
 
 #header.header-small {
