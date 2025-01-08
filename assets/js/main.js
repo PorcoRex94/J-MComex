@@ -125,3 +125,39 @@ menuBtn.addEventListener("click", () => {
 });
 
 /*-------------------Centrar los modales en movil--------------------------- */
+
+function toggleInfo(button) {
+  const infoBox = button.nextElementSibling; // Modal relacionado
+  const overlay = document.querySelector(".modal-overlay");
+
+  // Verificar si el modal ya está visible
+  const isVisible = infoBox.classList.contains("active");
+
+  // Cerrar todos los modales abiertos
+  document
+    .querySelectorAll(".info-box")
+    .forEach((box) => box.classList.remove("active"));
+  overlay.classList.remove("active");
+
+  // Si el modal no estaba visible, abrirlo
+  if (!isVisible) {
+    // Activar el modal
+    infoBox.classList.add("active");
+    overlay.classList.add("active");
+
+    // Asegurarse de que el modal aparezca justo debajo del botón
+    const buttonRect = button.getBoundingClientRect();
+    const infoBoxRect = infoBox.getBoundingClientRect();
+
+    infoBox.style.top = `${window.scrollY + buttonRect.bottom}px`;
+    infoBox.style.left = `${buttonRect.left}px`;
+  }
+}
+
+// Cerrar modales al hacer clic en el overlay
+document.querySelector(".modal-overlay").addEventListener("click", () => {
+  document
+    .querySelectorAll(".info-box")
+    .forEach((box) => box.classList.remove("active"));
+  document.querySelector(".modal-overlay").classList.remove("active");
+});

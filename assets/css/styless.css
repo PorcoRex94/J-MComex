@@ -1268,7 +1268,38 @@ i {
     height: 135vh;
   }
 
+  .info-box {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posición relativa al botón */
+    width: 90%; /* Ancho responsivo */
+    left: 5%; /* Centrado horizontalmente */
+    background-color: var(--amarillo);
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10; /* Sobre el contenido principal */
+  }
+
+  .info-box.active {
+    display: block; /* Se muestra al activarse */
+  }
+
+  .info-button {
+    position: relative; /* Base para la posición del modal */
+  }
+
   .modal-overlay {
+    display: none; /* Fondo para superposición */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5; /* Menor que la info-box */
+  }
+
+  .modal-overlay.active {
     display: block;
   }
 }
