@@ -495,10 +495,6 @@ i {
   right: 1.5%;
 }
 
-.asesoria {
-  text-indent: -0.7rem;
-}
-
 .modal-overlay {
   display: none; /* Oculto por defecto */
   position: fixed;
@@ -534,24 +530,6 @@ i {
 
 .punto {
   font-size: 2rem;
-}
-
-.especial {
-  position: relative;
-  left: 0.5%;
-  margin-right: 50px;
-}
-
-.especial-trading {
-  margin-right: 150px;
-}
-
-.especial-logistica {
-  margin-right: 100px;
-}
-
-.especial-logistica-dos {
-  margin-right: 150px;
 }
 
 .barrita {

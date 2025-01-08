@@ -125,3 +125,20 @@ menuBtn.addEventListener("click", () => {
 });
 
 /*-------------------Centrar los modales en movil--------------------------- */
+
+function toggleInfo(button) {
+  const modalOverlay = document.getElementById("modal-overlay");
+  const modalContent = document.getElementById("modal-info-content");
+
+  // Copia el contenido de la información desde el botón activado
+  const infoBox = button.nextElementSibling;
+  modalContent.innerHTML = infoBox.innerHTML;
+
+  // Mostrar el overlay y centrar
+  modalOverlay.style.display = "flex";
+}
+
+function closeModal() {
+  const modalOverlay = document.getElementById("modal-overlay");
+  modalOverlay.style.display = "none";
+}
