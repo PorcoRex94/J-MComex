@@ -261,7 +261,7 @@ i {
 }
 
 .hache__uno__container__en {
-  left: 8%;
+  left: 9%;
 }
 
 @keyframes zoomIn {
@@ -504,13 +504,13 @@ i {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  justify-content: center;
-  align-items: center;
   z-index: 1000;
 }
 
 .modal-overlay.active {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
