@@ -1330,6 +1330,10 @@ i {
   .p-welcome {
     left: 32%;
   }
+
+  .hache__uno__container__en {
+    left: 7%;
+  }
 }
 
 @media (max-width: 434px) {
