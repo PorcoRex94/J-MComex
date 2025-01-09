@@ -1326,6 +1326,10 @@ i {
   .img-hero {
     height: 100vh;
   }
+
+  .p-welcome {
+    left: 32%;
+  }
 }
 
 @media (max-width: 434px) {
