@@ -816,6 +816,11 @@ i {
   font-size: 1.3rem;
 }
 
+.sanserif {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
 .servicios-cormorant-in {
   font-family: "Cormorant Garamond";
   font-size: 1.1rem;
