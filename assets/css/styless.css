@@ -560,26 +560,26 @@ i {
 }
 
 .backgroundmyv {
-  position: absolute; /* Fija el contenedor a la pantalla */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centra el contenedor */
+  transform: translate(-50%, -50%);
   width: 1000px;
-  height: 750px; /* Puedes ajustar este tamaño según lo que necesites */
-  background-image: url("../img/mvv-es.png"); /* Cambia por la URL de tu imagen */
-  background-size: cover; /* Escala para llenar todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que se repita */
+  height: 750px;
+  background-image: url("../img/mvv-es.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.backgroundmyveng {
+.backgroundmyv__en {
   position: absolute; /* Fija el contenedor a la pantalla */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el contenedor */
   width: 1000px;
   height: 750px; /* Puedes ajustar este tamaño según lo que necesites */
-  background-image: url("../img/mvv-eng.png"); /* Cambia por la URL de tu imagen */
+  background-image: url("../img/pool__en.png"); /* Cambia por la URL de tu imagen */
   background-size: cover; /* Escala para llenar todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
@@ -590,7 +590,6 @@ i {
   color: var(--negro);
   font-family: "Cormorant Garamond";
   font-weight: 1000;
-  line-height: 2rem;
   text-align: justify;
 }
 
@@ -987,7 +986,8 @@ i {
     width: 60%;
   }
 
-  .backgroundmyv {
+  .backgroundmyv,
+  .backgroundmyv__en {
     width: 900px;
     height: 650px;
   }
@@ -1101,7 +1101,8 @@ i {
     width: 770px;
   }
 
-  .backgroundmyv {
+  .backgroundmyv,
+  .backgroundmyv__en {
     width: 768px;
   }
 }
@@ -1201,7 +1202,8 @@ i {
     height: 15vh;
   }
 
-  .backgroundmyv {
+  .backgroundmyv,
+  .backgroundmyv__en {
     width: 680px;
   }
 
@@ -1247,7 +1249,8 @@ i {
   .line-bottom {
     width: 530px;
   }
-  .backgroundmyv {
+  .backgroundmyv,
+  .backgroundmyv__en {
     width: 550px;
   }
 
@@ -1302,7 +1305,8 @@ i {
 }
 
 @media (max-width: 550px) {
-  .backgroundmyv {
+  .backgroundmyv,
+  .backgroundmyv__en {
     width: 450px;
   }
 
@@ -1313,7 +1317,12 @@ i {
 
 @media (max-width: 500px) {
   .img-hero {
+    background-image: url("../img/mvv-es.png");
     height: 93vh;
+  }
+
+  .backgroundmyv-container {
+    height: 250px;
   }
 
   .container-first-row,
@@ -1333,6 +1342,13 @@ i {
 
   .hache__uno__container__en {
     left: 7%;
+  }
+}
+
+@media (max-width: 450px) {
+  .backgroundmyv,
+  .backgroundmyv__en {
+    height: 60vh;
   }
 }
 
@@ -1374,6 +1390,11 @@ i {
 
   #header.header-small .logo-img {
     width: 45px;
+  }
+
+  .backgroundmyv,
+  .backgroundmyv__en {
+    height: 65vh;
   }
 
   .img-hero {
