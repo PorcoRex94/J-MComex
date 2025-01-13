@@ -547,7 +547,7 @@ i {
 #myv {
   position: relative;
   width: 100%;
-  height: 150vh; /* Puedes ajustar el tamaño según tus necesidades */
+  height: 150vh;
   overflow: hidden;
 }
 
@@ -1000,6 +1000,10 @@ i {
   .backgroundmyv-text {
     width: 85%;
   }
+
+  #myv {
+    height: 130vh;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -1311,6 +1315,10 @@ i {
   .text-nosotros {
     font-size: 1.2rem;
   }
+
+  #myv {
+    height: 140vh;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1357,6 +1365,10 @@ i {
   .backgroundmyv,
   .backgroundmyv__en {
     height: 60vh;
+  }
+
+  #myv {
+    height: 125vh;
   }
 }
 
