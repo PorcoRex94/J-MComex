@@ -1322,7 +1322,6 @@ i {
 
 @media (max-width: 500px) {
   .img-hero {
-    background-image: url("../img/mvv-es.png");
     height: 93vh;
   }
 
