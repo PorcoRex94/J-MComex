@@ -1051,6 +1051,10 @@ i {
     z-index: 11; /* Para asegurarse de que el botón esté siempre encima */
   }
 
+  #header {
+    padding-left: 0px;
+  }
+
   /* Ocultar el menú por defecto */
   .navbar-top {
     opacity: 0;
