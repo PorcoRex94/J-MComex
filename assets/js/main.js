@@ -17,6 +17,7 @@ emailjs.init("nGzlrbekCz3NXzSGy");
 
 // Captura el formulario por su ID y gestiona el envío
 document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
@@ -47,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .send("service_wnmsoi4", "template_tpzf9ja", templateParams)
         .then(function (response) {
           alert("Formulario enviado correctamente: " + response.status);
+          form.reset();
         })
         .catch(function (error) {
           console.error("Error al enviar el formulario:", error);

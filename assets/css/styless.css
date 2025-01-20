@@ -38,6 +38,11 @@
   height: 18px;
 }
 
+.favicon-img {
+  height: auto;
+  width: 2px;
+}
+
 i {
   width: 15px;
   height: 15px;
