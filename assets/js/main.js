@@ -1,3 +1,4 @@
+/*----------------ACHICAR HEADER-------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
   window.addEventListener("scroll", () => {
@@ -7,6 +8,53 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.remove("header-small");
     }
   });
+});
+
+/*-----------------------------FORMULARIO------------------------------ */
+
+// Inicializa EmailJS con tu Public Key (esto debe suceder antes de enviar correos)
+emailjs.init("nGzlrbekCz3NXzSGy");
+
+// Captura el formulario por su ID y gestiona el envío
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevenir el envío por defecto
+
+      // Recoger los datos del formulario
+      const templateParams = {
+        userName: document.getElementById("name").value,
+        sureName: document.getElementById("sureName").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+
+      if (
+        !templateParams.userName ||
+        !templateParams.sureName ||
+        !templateParams.phone ||
+        !templateParams.email ||
+        !templateParams.message
+      ) {
+        alert("Por favor, completa todos los campos.");
+        return; // Detener la ejecución si hay campos vacíos
+      }
+
+      // Enviar el correo usando EmailJS
+      emailjs
+        .send("service_wnmsoi4", "template_tpzf9ja", templateParams)
+        .then(function (response) {
+          alert("Formulario enviado correctamente: " + response.status);
+        })
+        .catch(function (error) {
+          console.error("Error al enviar el formulario:", error);
+          alert(
+            "Ocurrió un error al enviar el formulario. Detalles en consola."
+          );
+        });
+    });
 });
 
 /*-----------------Manejo del MODAL------------------------------------------ */
