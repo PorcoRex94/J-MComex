@@ -109,7 +109,7 @@ function closeHamburgerMenu() {
   }
 }
 
-const whatsappNumber = "+549114025-6307"; // Número de WhatsApp con código del país
+const whatsappNumber = "5491140256307"; // Número de WhatsApp con código del país
 
 const whatsappLink = document.getElementById("whatsapp-icon");
 
