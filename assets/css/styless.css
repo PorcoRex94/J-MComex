@@ -20,9 +20,9 @@
   --blanco: #ffff;
 }
 
-html,
 #body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 /*------------------HEADER--------------------*/

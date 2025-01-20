@@ -108,16 +108,9 @@ function closeHamburgerMenu() {
   }
 }
 
-function detectOverflow() {
-  const elements = document.querySelectorAll("*"); // Selecciona todos los elementos del DOM
-  elements.forEach((el) => {
-    const rect = el.getBoundingClientRect(); // Obtiene las dimensiones del elemento
-    if (rect.width > window.innerWidth) {
-      console.log("Overflow detectado:", el); // Muestra en la consola los elementos que generan overflow
-      el.classList.add("overflow-element"); // Agrega la clase para resaltarlos
-    }
-  });
-}
-
-// Ejecuta la detección después de que se cargue la página
-window.addEventListener("load", detectOverflow);
+document.querySelectorAll("*").forEach((el) => {
+  if (el.scrollWidth > el.clientWidth) {
+    console.log("Elemento con overflow:", el);
+    el.style.border = "2px solid red"; // Resalta el elemento
+  }
+});
