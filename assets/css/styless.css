@@ -1362,6 +1362,10 @@ i {
   .container-servicios {
     width: 400px;
   }
+
+  .hache__uno__container__en {
+    left: 22%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1374,7 +1378,7 @@ i {
   }
 
   .hache__uno__container__en {
-    left: 21.5%;
+    left: 20%;
   }
 }
 
@@ -1387,25 +1391,20 @@ i {
   #myv {
     height: 125vh;
   }
-
-  .hache__uno__container__en {
-    left: 19%;
-  }
 }
 
 @media (max-width: 434px) {
   .img-hero {
     height: 115vh;
   }
+  .hache__uno__container__en {
+    left: 18%;
+  }
 }
 
 @media (max-width: 430px) {
   .h-t-s {
     width: 400px;
-  }
-
-  .hache__uno__container__en {
-    left: 18%;
   }
 }
 
@@ -1425,11 +1424,11 @@ i {
   }
 
   .hache__uno__container__en {
-    left: 17%;
+    left: 15%;
   }
 }
 
-@media (min-width: 360px) and (max-width: 399px) {
+@media (max-width: 360px) {
   #header.header-small {
     height: 50px;
     padding-left: 10px;
