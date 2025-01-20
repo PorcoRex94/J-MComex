@@ -107,10 +107,3 @@ function closeHamburgerMenu() {
     line3.classList.remove("activeline3__bars__menu");
   }
 }
-
-document.querySelectorAll("*").forEach((el) => {
-  if (el.scrollWidth > el.clientWidth) {
-    console.log("Elemento con overflow:", el);
-    el.style.border = "2px solid red"; // Resalta el elemento
-  }
-});
