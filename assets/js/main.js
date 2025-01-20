@@ -1,11 +1,12 @@
-// Cambiar header al hacer scroll
-const header = document.getElementById("header");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.classList.add("header-small");
-  } else {
-    header.classList.remove("header-small");
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("header-small");
+    } else {
+      header.classList.remove("header-small");
+    }
+  });
 });
 
 /*-----------------Manejo del MODAL------------------------------------------ */
@@ -106,4 +107,19 @@ function closeHamburgerMenu() {
     line2.classList.remove("activeline2__bars__menu");
     line3.classList.remove("activeline3__bars__menu");
   }
+}
+
+const whatsappNumber = "+549114025-6307"; // Número de WhatsApp con código del país
+
+const whatsappLink = document.getElementById("whatsapp-icon");
+
+// Detectar si el usuario está en móvil o escritorio
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile) {
+  // Enlace para abrir la app de WhatsApp
+  whatsappLink.href = `https://wa.me/${whatsappNumber}`;
+} else {
+  // Enlace para WhatsApp Web (escritorio)
+  whatsappLink.href = `https://web.whatsapp.com/send?phone=${whatsappNumber}`;
 }
