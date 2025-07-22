@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Comercio exterior, Comercio internacional, Aduana"
+      content="Comercio exterior, Comercio internacional, Aduana, Importaciones baratas, Importar a bajo costo, exportaciones baratas, exportar a bajo precio"
     />
     <meta name="author" content="Ambraco" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jmcomercioexterior.com.ar/index.html" />
+    <meta name="publisher" content="Ambraco" />
     <title>J&M Comex - Asesoría en Comercio Internacional</title>
-    <link rel="icon" href="./assets/logo/jm-logo.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="/assets/logo/jm-logo-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="/assets/logo/jm-logo.png" />
     <link rel="stylesheet" href="./assets/css/styless.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      media="print"
+      onload="this.media='all';"
     />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+      defer
     ></script>
   </head>
   <body id="body">
     <header id="header">
       <a href="#" id="icon-original"
         ><img
-          src="./assets/logo/jm-negro.png"
+          src="./assets/logo/jm-negro.webp"
           alt="Logo j&m comex"
           class="logo-img"
       /></a>
@@ -54,7 +65,7 @@
           <li class="li-navbar-top">
             <a href="./assets/en/en.html" class="a-navbar-top" hreflang="en"
               ><img
-                src="./assets/logo/icon-ru.png"
+                src="./assets/logo/icon-ru.webp"
                 alt="bandera reino unido"
                 class="icon__language"
               />EN</a
@@ -70,9 +81,7 @@
     </header>
     <main id="main">
       <section class="video-container">
-        <div class="text">
-          <div class="line"></div>
-        </div>
+        <div class="line-top"></div>
         <video autoplay loop muted playsinline>
           <source src="./assets/video/Video-hero.mp4" type="video/mp4" />
           Tu navegador no soporta el video HTML5.
@@ -81,15 +90,15 @@
           <div class="overlay">
             <div class="logo">
               <img
-                src="./assets/logo/fondo-blancoo.png"
+                src="./assets/logo/fondo-blancoo.webp"
                 alt="Logo de j y m"
                 class="jm-blanco"
               />
             </div>
             <div class="hache-uno-container es">
               <div class="container-welcome">
-                <p class="p-welcome gothic">WELCOME TO</p>
-                <h4 class="jm sorts__jm">JM Comex</h4>
+                <p class="p-welcome">WELCOME TO</p>
+                <h4 class="jm">JM Comex</h4>
               </div>
               <h1 class="hache-uno sorts">
                 Asesoría en Comercio Internacional
@@ -99,8 +108,8 @@
               >
             </div>
           </div>
-          <div class="line-bottom"></div>
         </div>
+        <div class="line-bottom"></div>
       </section>
       <section id="nosotros">
         <h2 class="hache-dos-pag">SOBRE NOSOTROS</h2>
@@ -137,8 +146,15 @@
                 acción personalizados que impulsan tu crecimiento.
               </p>
               <p class="text-nosotros">
-                Nuestro compromiso: ofrecerte <br />soluciones efectivas y
-                <br />acompañarte en tu <br />camino hacia el éxito.
+                Nuestro compromiso: ofrecerte
+                <br class="espacio__nosotros" style="display: none" />soluciones
+                efectivas y
+                <br
+                  class="espacio__nosotros"
+                  style="display: none"
+                />acompañarte en tu
+                <br class="espacio__nosotros" style="display: none" />camino
+                hacia el éxito.
               </p>
             </div>
           </div>
@@ -159,7 +175,7 @@
           <div class="container-first-row">
             <div class="column-left">
               <img
-                src="./assets/img/consultoria.png"
+                src="./assets/img/consultoria.webp"
                 alt="Consultoría"
                 class="img-servicios"
               />
@@ -169,9 +185,9 @@
                   Asesoramiento experto en comercio exterior y aduanas
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -204,7 +220,7 @@
             </div>
             <div class="column-right">
               <img
-                src="./assets/img/gestion.png"
+                src="./assets/img/gestion.webp"
                 class="img-servicios"
                 alt="Gestión"
               />
@@ -214,9 +230,9 @@
                   Gestión eficiente de procesos aduaneros
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -263,7 +279,7 @@
           <div class="container-first-row">
             <div class="column-left">
               <img
-                src="./assets/img/gbancarias.png"
+                src="./assets/img/gbancarias.webp"
                 alt="Administrativas"
                 class="img-servicios"
               />
@@ -275,9 +291,9 @@
                   Servicio integral de gestiones administrativas y bancarias
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -313,7 +329,7 @@
             </div>
             <div class="column-right">
               <img
-                src="./assets/img/logistica.png"
+                src="./assets/img/logistica.webp"
                 class="img-servicios"
                 alt="Logística"
               />
@@ -323,9 +339,9 @@
                   Coordinación logística completa
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -364,7 +380,7 @@
           <div class="container-first-row">
             <div class="column-left">
               <img
-                src="./assets/img/trading.png"
+                src="./assets/img/trading.webp"
                 alt="Trading"
                 class="img-servicios"
               />
@@ -375,9 +391,9 @@
                   internacionales
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -415,7 +431,7 @@
             </div>
             <div class="column-right">
               <img
-                src="./assets/img/abogada.png"
+                src="./assets/img/abogada.webp"
                 class="img-servicios"
                 alt="Asuntos legales"
               />
@@ -425,9 +441,9 @@
                   Especialistas en Derecho Aduanero y Comercio Internacional
                 </p>
                 <a
-                  href="javascript:void(0)"
+                  href="#info-modal"
                   class="info-button a-c-s"
-                  onclick="toggleInfo(this)"
+                  onclick="toggleInfo(this); return false;"
                   >+INFO</a
                 >
                 <div class="info-box">
@@ -465,16 +481,65 @@
         </div>
       </section>
       <section id="myv">
+        <div class="lineas-horizontales">
+          <div class="linea negra"></div>
+          <div class="linea dorada"></div>
+          <div class="linea clara"></div>
+        </div>
         <div class="backgroundmyv-container">
-          <p class="backgroundmyv-text">
-            En JM Comex, nuestra cultura empresarial se sustenta en tres pilares
-            fundamentales:
-          </p>
-          <p class="backgroundmyv-text">
-            misión, visión y valores que nos orientan hacia el éxito, la
-            innovación y la satisfacción de nuestros clientes.
-          </p>
-          <div class="backgroundmyv"></div>
+          <h3 class="hache-tres-myv">CULTURA EMPRESARIAL DE JM COMEX</h3>
+          <div>
+            <p class="backgroundmyv-text">
+              En JM Comex, nuestra cultura empresarial se sustenta en tres
+              pilares fundamentales:
+            </p>
+            <p class="backgroundmyv-text">
+              misión, visión y valores que nos orientan hacia el éxito, la
+              innovación y la satisfacción de nuestros clientes.
+            </p>
+          </div>
+        </div>
+        <div class="principios">
+          <div class="principio front">
+            <div class="icon">🚀</div>
+            <!-- <img src="icons/mision.svg" alt="Icono Misión" /> -->
+            <h3>Misión</h3>
+            <div class="back">
+              <p>
+                Nuestra misión es apoyar a empresas en el proceso de
+                internalización de manera eficiente y exitosa, mejorando su
+                eficiencia y capacidad para competir en el mercado global
+              </p>
+            </div>
+          </div>
+
+          <div class="principio front">
+            <!-- <img src="icons/mision.svg" alt="Icono Misión" /> -->
+            <div class="icon">💡</div>
+            <h3>Visión</h3>
+            <div class="back">
+              <p>
+                Nuestra visión se basa en impulsar a las empresas a expandirse y
+                prosperar en el mercado global, lo que implica a aumentar su
+                presencia, ventas y competitividad. Buscamos crear oportunidades
+                que sean sostenibles a corto y largo plazo, a través de nuestra
+                consolidada experiencia en comercio internacional.
+              </p>
+            </div>
+          </div>
+
+          <div class="principio front">
+            <!-- <img src="icons/mision.svg" alt="Icono Misión" /> -->
+            <div class="icon">⚛️</div>
+            <h3>Valores</h3>
+            <div class="back">
+              <p>
+                En JM Comex, nos guiamos por cinco valores fundamentales que nos
+                inspiran a ser mejores: Innovación, compromiso, colaboración,
+                integridad y orientación al cliente.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contacto">
@@ -482,16 +547,16 @@
         <div class="container-info">
           <div class="container-info-container">
             <div class="container-icon">
-              <a class="a-icon"
+              <a class="a-icon" href="tel:+549114025-6307"
                 ><img
-                  src="./assets/logo/icono-tel.png"
+                  src="./assets/logo/icono-tel.webp"
                   alt="icono teléfono"
                   class="icon-img"
                 />+54 9 11 4025-6307</a
               >
-              <a class="a-icon"
+              <a class="a-icon" href="mailto:info@jmcomercioexterior.com.ar"
                 ><img
-                  src="./assets/logo/icono-mail.png"
+                  src="./assets/logo/icono-mail.webp"
                   alt="icono mail"
                   class="icon-img"
                 />info@jmcomercioexterior.com.ar</a
@@ -564,41 +629,42 @@
       id="whatsapp-icon"
       target="_blank"
     >
-      <img src="./assets/logo/icono-wsp.png" alt="WhatsApp icono" />
+      <img src="./assets/logo/icono-wsp.webp" alt="WhatsApp icono" />
     </a>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
     <footer class="footer">
       <div class="logo-container">
-        <a href="#"
-          ><img
-            src="./assets/logo/jm-negro.png"
+        <a href="#">
+          <img
+            src="./assets/logo/jm-negro.webp"
             alt="Logo jym Comex"
             class="logo-footer"
-        /></a>
-        <a class="footer-a"
+          />
+        </a>
+        <a class="footer-a" href="tel:+549114025-6307"
           ><img
-            src="./assets/logo/iconmonstr-smartphone.png"
+            src="./assets/logo/iconmonstr-smartphone.webp"
             alt="icono de teléfono"
             class="icon-footer"
           />+54 9 11 4025-6307</a
         >
-        <a class="footer-a"
+        <a class="footer-a" href="mailto:info@jmcomercioexterior.com.ar"
           ><img
-            src="./assets/logo/iconmonstr-email.png"
+            src="./assets/logo/iconmonstr-email.webp"
             alt="icono de email"
             class="icon-footer"
           />info@jmcomercioexterior.com.ar</a
         >
-        <a class="footer-a"
+        <a class="footer-a" href="https://jmcomercioexterior.com.ar"
           ><img
-            src="./assets/logo/iconmonstr-web.png"
+            src="./assets/logo/iconmonstr-web.webp"
             alt="icono de web"
             class="icon-footer"
-          />www.jmcomercioexterior.com</a
+          />www.jmcomercioexterior.com.ar</a
         >
       </div>
       <p class="p-footer">
-        &copy; 2024 Todos los derechos reservados - AMBRACO.
+        &copy; 2024 Todos los derechos reservados - Developed by AMBRACO.
       </p>
     </footer>
   </body>

@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
 /*-----------------------------FORMULARIO------------------------------ */
 
 // Inicializa EmailJS con tu Public Key (esto debe suceder antes de enviar correos)
-emailjs.init("nGzlrbekCz3NXzSGy");
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("nGzlrbekCz3NXzSGy");
+  } else {
+    console.error("EmailJS no está cargado. Revisa la importación en tu HTML.");
+  }
+});
 
 // Captura el formulario por su ID y gestiona el envío
 document.addEventListener("DOMContentLoaded", function () {
@@ -159,17 +165,19 @@ function closeHamburgerMenu() {
   }
 }
 
-const whatsappNumber = "5491140256307"; // Número de WhatsApp con código del país
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappNumber = "5491140256307"; // Número en formato internacional
+  const whatsappLink = document.getElementById("whatsapp-icon");
 
-const whatsappLink = document.getElementById("whatsapp-icon");
+  if (whatsappLink) {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-// Detectar si el usuario está en móvil o escritorio
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-if (isMobile) {
-  // Enlace para abrir la app de WhatsApp
-  whatsappLink.href = `https://wa.me/${whatsappNumber}`;
-} else {
-  // Enlace para WhatsApp Web (escritorio)
-  whatsappLink.href = `https://web.whatsapp.com/send?phone=${whatsappNumber}`;
-}
+    if (isMobile) {
+      whatsappLink.href = `https://wa.me/${whatsappNumber}`;
+    } else {
+      whatsappLink.href = `https://web.whatsapp.com/send?phone=${whatsappNumber}`;
+    }
+  } else {
+    console.error("No se encontró el botón de WhatsApp.");
+  }
+});
