@@ -573,7 +573,6 @@ i {
   min-width: 375px;
   max-width: 425px;
   height: 375px;
-  background: white;
   border-radius: 12px;
   padding: 2rem 1rem;
   overflow: hidden;
@@ -583,28 +582,10 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--negro);
   color: var(--amarillo);
   font-family: "Cinzel", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 5rem;
-}
-
-.principio:nth-child(1) {
-  background-color: #000;
-}
-
-.principio:nth-child(2) {
-  background-color: #b38c4d;
-  color: var(--negro);
-}
-
-.principio:nth-child(3) {
-  background-color: #e6d3aa;
-}
-
-.principio:nth-child(2) .back {
-  color: var(--negro);
 }
 
 /* ícono y título */
@@ -631,7 +612,6 @@ i {
   font-size: 1.2rem;
   font-family: sans-serif;
   line-height: 1.5;
-  color: var(--amarillo);
 }
 
 /* efecto hover */
@@ -668,7 +648,6 @@ i {
   cursor: pointer;
   overflow: hidden;
   color: white;
-  text-align: center;
 }
 
 .principio:hover {
@@ -701,12 +680,10 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-size: 0.95rem;
+  text-align: left;
+  font-size: 1.1rem;
   border-radius: 20px;
   color: white;
-  line-height: 1.6;
-  font-size: 1.2rem;
 }
 
 .principio:hover .back {
@@ -730,19 +707,11 @@ i {
   background-blend-mode: overlay;
 }
 
-.principio:nth-child(1) .back {
-  background: linear-gradient(135deg, #1a1a1a, #000000);
-}
-
 /* 🟤 Visión: dorado oscuro → claro */
 .principio:nth-child(2) {
   background: linear-gradient(145deg, #c9a86b 10%, #c9a86b 50%, #2b2b2b 100%),
     radial-gradient(circle at top left, #d4ad68, #000000);
   background-blend-mode: overlay;
-}
-
-.principio:nth-child(2) .back {
-  background: linear-gradient(135deg, #a27d3d, #b38c4d);
 }
 
 /* 🟡 Valores: beige claro → más claro */
@@ -756,9 +725,9 @@ i {
   background-blend-mode: overlay;
 }
 
-.principio:nth-child(3) .back {
-  background: linear-gradient(135deg, #d6be94, #e6d3aa);
-  color: #3a3325;
+.principio .back {
+  background-color: #c5b18c;
+  color: #766a50;
 }
 
 .backgroundmyv-container {
@@ -832,6 +801,10 @@ i {
   gap: 35px;
   color: var(--amarillo);
   background-color: var(--negroClaro);
+}
+
+.hache-tres-contact {
+  text-align: center;
 }
 
 .form {
