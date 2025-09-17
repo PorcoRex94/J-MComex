@@ -309,6 +309,7 @@ i {
 /*------------- SECTION NOSOTROS-----------------*/
 
 #nosotros {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,6 +367,91 @@ i {
 .especial-nosotros {
   display: flex;
   gap: 6px;
+}
+
+/* SECTION NOSOTROS NUEVA */
+
+.container__nosotros__dos {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  padding: 10rem;
+}
+
+.img__nosotros {
+  width: 400px;
+  height: 450px;
+}
+
+.first__container__nosotros {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.first__container__nosotros {
+  width: 40%;
+}
+
+.second__container__nosotros {
+  width: 60%;
+  padding-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ht__nosotros {
+  font-size: 2.2rem;
+}
+
+.p__nosotros {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.container__icons__nosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.p__icon__nosotros {
+  font-size: 1.5rem;
+}
+
+.icon-nosotros {
+  width: 60px;
+  height: auto;
+  color: #b38c4d;
+}
+
+.two__icons__container {
+  display: flex;
+  gap: 75px;
+}
+
+.container__icon__p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container__btn__nosotros {
+  padding: 2.3rem 0rem;
+}
+
+.btn__nosotros {
+  padding: 1.5rem 2.5rem;
+  border-radius: 5%;
+  background-color: var(--amarillo);
+  color: white;
+  font-size: 1.4rem;
+}
+
+.btn__nosotros:hover {
+  background: var(--negro);
+  color: white;
+  transform: scale(1.05);
 }
 
 /*----------------SECTION SERVICIOS-----------------*/
@@ -588,12 +674,6 @@ i {
   margin-bottom: 5rem;
 }
 
-/* ícono y título */
-.principio .icon,
-.principio h3 {
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
 /* contenido oculto */
 .principio .back {
   position: absolute;
@@ -615,7 +695,7 @@ i {
 }
 
 /* efecto hover */
-.principio:hover .icon,
+.principio:hover .icon-mvv,
 .principio:hover h3 {
   opacity: 0;
   transform: translateY(-100%);
@@ -626,9 +706,9 @@ i {
   transform: translateY(0%);
 }
 
-.icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.icon-mvv {
+  width: 90px;
+  height: auto;
 }
 
 /* Segundos estilos de mision y valor*/
@@ -645,6 +725,7 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 25px;
   cursor: pointer;
   overflow: hidden;
   color: white;
@@ -654,19 +735,18 @@ i {
   transform: translateY(-6px) scale(1.015);
 }
 
-/* ICON + TÍTULO */
-.principio .icon {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
 .principio h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   font-weight: 600;
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.front,
+.back {
+  background-color: #fffef6;
+  color: var(--negro);
 }
 
 /* BACK SIDE */
@@ -683,7 +763,6 @@ i {
   text-align: left;
   font-size: 1.1rem;
   border-radius: 20px;
-  color: white;
 }
 
 .principio:hover .back {
@@ -695,39 +774,6 @@ i {
 .principio:hover .icon {
   opacity: 0;
   transform: translateY(-20px);
-}
-/* 🖤 Misión: negro → gris */
-.principio:nth-child(1) {
-  background: linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(0, 0, 0, 0.2)
-    ),
-    radial-gradient(circle at top left, #a27d3d, #000000);
-  background-blend-mode: overlay;
-}
-
-/* 🟤 Visión: dorado oscuro → claro */
-.principio:nth-child(2) {
-  background: linear-gradient(145deg, #c9a86b 10%, #c9a86b 50%, #2b2b2b 100%),
-    radial-gradient(circle at top left, #d4ad68, #000000);
-  background-blend-mode: overlay;
-}
-
-/* 🟡 Valores: beige claro → más claro */
-.principio:nth-child(3) {
-  background: linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(0, 0, 0, 0.2)
-    ),
-    radial-gradient(circle at top left, #e6d3aa, #0a0908);
-  background-blend-mode: overlay;
-}
-
-.principio .back {
-  background-color: #c5b18c;
-  color: #766a50;
 }
 
 .backgroundmyv-container {
