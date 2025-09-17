@@ -374,13 +374,14 @@ i {
 .container__nosotros__dos {
   width: 100%;
   display: flex;
+  align-items: center;
   gap: 50px;
   padding: 3rem;
 }
 
 .video__nosotros {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover; /* rellena el box sin deformarse */
   border-radius: 8px; /* opcional */
 }
@@ -392,11 +393,12 @@ i {
 
 .first__container__nosotros {
   width: 40%;
+  padding-right: 5rem;
 }
 
 .second__container__nosotros {
   width: 60%;
-  padding-right: 10rem;
+  padding: 0rem 3rem 0rem 7rem;
   display: flex;
   flex-direction: column;
   gap: 25px;
