@@ -383,6 +383,13 @@ i {
   height: 450px;
 }
 
+.video__nosotros {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* rellena el box sin deformarse */
+  border-radius: 8px; /* opcional */
+}
+
 .first__container__nosotros {
   display: flex;
   justify-content: flex-end;
