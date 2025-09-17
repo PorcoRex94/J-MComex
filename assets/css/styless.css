@@ -375,12 +375,7 @@ i {
   width: 100%;
   display: flex;
   gap: 50px;
-  padding: 10rem;
-}
-
-.img__nosotros {
-  width: 400px;
-  height: 450px;
+  padding: 3rem;
 }
 
 .video__nosotros {
@@ -411,9 +406,19 @@ i {
   font-size: 2.2rem;
 }
 
+.linea__dorada__ns {
+  position: relative;
+  bottom: 18px;
+  width: 30%;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #b38c4d;
+}
+
 .p__nosotros {
   font-size: 1.6rem;
   line-height: 2.1rem;
+  text-align: justify;
 }
 
 .container__icons__nosotros {
@@ -423,13 +428,17 @@ i {
 }
 
 .p__icon__nosotros {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .icon-nosotros {
-  width: 60px;
+  width: 50px;
   height: auto;
   color: #b38c4d;
+}
+
+.confianza {
+  width: 45px;
 }
 
 .two__icons__container {
@@ -441,6 +450,10 @@ i {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.confianza__gap {
+  gap: 20px;
 }
 
 .container__btn__nosotros {
