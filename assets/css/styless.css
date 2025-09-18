@@ -462,21 +462,6 @@ i {
   padding: 2.3rem 0rem;
 }
 
-.btn__nosotros {
-  padding: 1.5rem 2.5rem;
-  border-radius: 15px;
-  background-color: var(--amarillo);
-  color: white;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-}
-
-.btn__nosotros:hover {
-  background: var(--negro);
-  color: white;
-  transform: scale(1.05);
-}
-
 /*----------------SECTION SERVICIOS-----------------*/
 
 #servicios {
@@ -554,11 +539,25 @@ i {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.btn__nosotros {
+  padding: 1.5rem;
+  background-color: var(--amarillo);
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
 .info-button:hover {
   transform: scale(1.05);
   background-color: var(--amarillo);
   color: black;
   z-index: 3;
+}
+
+.btn__nosotros:hover {
+  background: var(--negro);
+  color: var(--amarillo);
+  transform: scale(1.05);
 }
 
 .hache-tres-container {
