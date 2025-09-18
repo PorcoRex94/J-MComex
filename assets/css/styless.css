@@ -546,7 +546,7 @@ i {
 }
 
 .btn__nosotros {
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: var(--amarillo);
   color: black;
   font-size: 1.2rem;
