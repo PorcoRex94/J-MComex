@@ -525,6 +525,12 @@ i {
   width: 100%;
 }
 
+.container_info_box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .info-button {
   width: 35%;
   display: flex;
@@ -540,7 +546,7 @@ i {
 }
 
 .btn__nosotros {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: var(--amarillo);
   color: black;
   font-size: 1.2rem;
