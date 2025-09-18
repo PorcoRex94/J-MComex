@@ -1045,6 +1045,10 @@ textarea::placeholder {
   font-size: 1.1rem;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .footer-a:hover .icon-footer,
 .footer-a:hover {
   filter: brightness(0) saturate(100%) invert(92%) sepia(100%) saturate(1%)
