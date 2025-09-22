@@ -747,9 +747,7 @@ i {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: -1.5px -1.5px 1.5px var(--amarillo),
-    -1.5px 1.5px 1.5px var(--amarillo), 1.5px -1.5px 1.5px var(--amarillo),
-    1.5px 1.5px 1.5px var(--amarillo);
+  box-shadow: 0 0 20px var(--amarillo);
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
