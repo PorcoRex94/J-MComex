@@ -373,10 +373,10 @@ i {
 
 .container__nosotros__dos {
   width: 100%;
+  padding: 6rem 0rem;
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 3rem;
 }
 
 .video__nosotros {
@@ -393,7 +393,7 @@ i {
 
 .first__container__nosotros {
   width: 40%;
-  padding-right: 5rem;
+  padding-right: 2.5rem;
 }
 
 .second__container__nosotros {
@@ -1073,6 +1073,10 @@ textarea::placeholder {
   .overlay {
     left: -5%;
   }
+
+  .second__container__nosotros {
+    padding: 0rem 2rem 0rem 5rem;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -1081,6 +1085,17 @@ textarea::placeholder {
   }
   .p-s {
     width: 75%;
+  }
+
+  .first__container__nosotros {
+    padding-right: 1rem;
+  }
+
+  .second__container__nosotros {
+    padding: 0rem 1.5rem 0rem 3rem;
+  }
+
+  .container__icons__nosotros {
   }
 }
 
