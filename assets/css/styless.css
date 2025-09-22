@@ -826,6 +826,10 @@ i {
   font-size: 2rem;
 }
 
+.valores {
+  hyphens: auto; /* activa guiones automáticos */
+}
+
 /* Estilos para la misión y visión */
 .container-nosotros {
   display: flex;
