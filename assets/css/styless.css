@@ -747,7 +747,7 @@ i {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--amarillo);
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
