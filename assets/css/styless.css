@@ -827,7 +827,9 @@ i {
 }
 
 .valores {
+  font-size: 1.3rem;
   hyphens: auto; /* activa guiones automáticos */
+  font-family: "Cormorant Garamond", sans-serif;
 }
 
 /* Estilos para la misión y visión */
