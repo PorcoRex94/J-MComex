@@ -789,7 +789,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: justify;
   font-size: 1.1rem;
   border-radius: 20px;
 }
