@@ -1621,7 +1621,7 @@ textarea::placeholder {
 
   .container_info_box {
     padding: 1rem;
-    box-shadow: 0px 0px 1px var(--negro);
+    box-shadow: 0px 0px 4px var(--amarillo);
   }
 
   .justify {
