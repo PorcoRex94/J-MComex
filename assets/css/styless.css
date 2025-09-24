@@ -406,6 +406,17 @@ i {
   background-color: #b38c4d;
 }
 
+.oculta {
+  display: none;
+}
+
+.video__nosotros__oculta {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* rellena el box sin deformarse */
+  border-radius: 8px; /* opcional */
+}
+
 .ht__nosotros {
   font-size: 2.2rem;
 }
@@ -414,6 +425,7 @@ i {
   font-size: 1.6rem;
   line-height: 2.1rem;
   text-align: justify;
+  hyphens: auto;
 }
 
 .p__icon__nosotros {
@@ -434,6 +446,10 @@ i {
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
+}
+
+.container__icons__nosotros {
+  display: flex;
 }
 
 .container__icon__p {
@@ -1452,8 +1468,8 @@ textarea::placeholder {
   }
 
   .container__nosotros__dos {
-    padding: 3.5rem 1rem;
-    align-items: flex-end;
+    padding: 0rem;
+    align-items: center;
   }
 
   .confianza {
@@ -1467,6 +1483,53 @@ textarea::placeholder {
   .btn__nosotros {
     font-size: 0.8rem;
     width: 135px;
+  }
+
+  .first__container__nosotros {
+    display: none;
+  }
+
+  .oculta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video__nosotros__oculta {
+    width: 50%;
+    height: 50%;
+  }
+
+  .second__container__nosotros {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .ht__nosotros {
+    font-size: 2rem;
+  }
+
+  .p__nosotros {
+    font-size: 1.4rem;
+  }
+
+  .p__icon__nosotros {
+    font-size: 1.1rem;
+  }
+
+  .container__icons__nosotros {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__btn__nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .two__icons__container {
+    gap: 45px;
   }
 }
 
