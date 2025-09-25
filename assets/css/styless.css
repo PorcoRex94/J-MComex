@@ -1342,6 +1342,20 @@ textarea::placeholder {
   .container__nosotros__dos {
     padding: 3.5rem 2rem;
   }
+
+  .container-info {
+    flex-direction: column;
+  }
+
+  .container-info-container {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1722,6 +1736,10 @@ textarea::placeholder {
 
   .espacio__nosotros {
     display: block !important;
+  }
+
+  .container-info-container {
+    font-size: 1.1rem;
   }
 }
 
