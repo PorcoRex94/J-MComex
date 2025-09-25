@@ -345,15 +345,6 @@ i {
   width: 100%;
 }
 
-.text-nosotros-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 70%;
-}
-
 .text-nosotros {
   font-size: 1.5rem;
   color: var(--negro);
@@ -648,6 +639,7 @@ i {
 /*----------------------MISION Y VISION---------------------------------*/
 
 #myv {
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -678,49 +670,10 @@ i {
 
 .principios {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 20px;
-}
-
-.principio {
-  position: relative;
-  flex: 1;
-  min-width: 375px;
-  max-width: 425px;
-  height: 375px;
-  border-radius: 12px;
-  padding: 2rem 1rem;
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--amarillo);
-  font-family: "Cinzel", sans-serif;
-  font-size: 1.3rem;
-  margin-bottom: 5rem;
-}
-
-/* contenido oculto */
-.principio .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 2rem 1rem;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 0.4s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  line-height: 1.5;
 }
 
 /* efecto hover */
@@ -740,13 +693,13 @@ i {
   height: auto;
 }
 
-/* Segundos estilos de mision y valor*/
-
-/* BASE general */
 .principio {
   position: relative;
   width: 300px;
   height: 300px;
+  min-width: 375px;
+  max-width: 425px;
+  margin-bottom: 5rem;
   border-radius: 20px;
   box-shadow: 0 0 20px var(--amarillo);
   transition: all 0.4s ease;
@@ -758,6 +711,10 @@ i {
   cursor: pointer;
   overflow: hidden;
   color: white;
+  font-size: 1.3rem;
+  hyphens: auto;
+  font-family: "Cinzel", sans-serif;
+  border: 1px solid var(--amarillo);
 }
 
 .principio:hover {
@@ -792,6 +749,7 @@ i {
   text-align: justify;
   font-size: 1.1rem;
   border-radius: 20px;
+  line-height: 1.6rem;
 }
 
 .principio:hover .back {
@@ -808,10 +766,10 @@ i {
 .backgroundmyv-container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  padding: 2rem;
+  gap: 60px;
   justify-content: center;
   align-items: center;
-  height: 175px;
   margin-bottom: 3rem;
 }
 
@@ -820,15 +778,19 @@ i {
   color: var(--negro);
   font-family: "Cormorant Garamond", sans-serif;
   font-weight: 1000;
-  text-align: center;
+  text-align: justify;
+  hyphens: auto;
+  width: 100%;
 }
 
 .hache-tres-myv {
   font-size: 2rem;
+  text-align: center;
 }
 
 .valores {
   font-size: 1.3rem;
+  text-align: center;
   hyphens: auto; /* activa guiones automáticos */
   font-family: "Cormorant Garamond", sans-serif;
 }
@@ -1133,10 +1095,6 @@ textarea::placeholder {
   .logo img {
     left: 38%;
   }
-
-  .text-nosotros-container {
-    width: 85%;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -1168,9 +1126,15 @@ textarea::placeholder {
     width: 900px;
     height: 650px;
   }
+}
 
-  .backgroundmyv-text {
-    width: 85%;
+@media (max-width: 1225px) {
+  .principio {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    min-width: 350px;
+    max-width: 400px;
   }
 }
 
@@ -1209,11 +1173,31 @@ textarea::placeholder {
   .confianza {
     width: 35px;
   }
+
+  .principio {
+    min-width: 325px;
+    max-width: 375px;
+  }
 }
 
 @media (max-width: 1100px) {
   .container__nosotros__dos {
     padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  .principio {
+    min-width: 300px;
+    max-width: 350px;
+  }
+
+  .principio .back {
+    padding: 0rem 1.5rem;
+  }
+
+  .valores {
+    font-size: 1.2rem;
   }
 }
 
@@ -1332,6 +1316,13 @@ textarea::placeholder {
   .confianza {
     width: 30px;
   }
+
+  .principio {
+    min-width: 275px;
+    max-width: 325px;
+    width: 275px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1357,6 +1348,39 @@ textarea::placeholder {
   .container-first-row,
   .container-servicios {
     width: 850px;
+  }
+}
+
+@media (max-width: 925px) {
+  .principios {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 0px;
+  }
+
+  #myv {
+    padding: 3rem 0rem;
+  }
+
+  .principio {
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .backgroundmyv-text {
+    font-size: 1.7rem;
+  }
+
+  .valores {
+    font-size: 1.5rem;
+  }
+
+  .hache-tres-myv {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -1547,11 +1571,8 @@ textarea::placeholder {
   .container-icon {
     padding-right: 0px;
   }
-
-  .text-nosotros-container {
-    width: 100%;
-  }
 }
+
 @media (max-width: 680px) {
   .backgroundmyv,
   .backgroundmyv__en {
@@ -1566,6 +1587,10 @@ textarea::placeholder {
 @media (max-width: 650px) {
   .img-hero {
     height: 105vh;
+  }
+
+  .valores {
+    line-height: 1.8rem;
   }
 }
 
@@ -1627,6 +1652,18 @@ textarea::placeholder {
   .justify {
     font-size: 1.2rem;
   }
+
+  .hache-tres-myv {
+    font-size: 1.8rem;
+  }
+
+  .backgroundmyv-text {
+    font-size: 1.6rem;
+  }
+
+  .backgroundmyv-container {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1664,10 +1701,6 @@ textarea::placeholder {
 @media (max-width: 500px) {
   .img-hero {
     height: 93vh;
-  }
-
-  .backgroundmyv-container {
-    height: 250px;
   }
 
   .container-first-row,
@@ -1723,6 +1756,14 @@ textarea::placeholder {
   .es {
     left: 7%;
   }
+
+  .backgroundmyv-text {
+    text-align: center;
+  }
+
+  .valores {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 434px) {
@@ -1777,6 +1818,10 @@ textarea::placeholder {
   }
   .es {
     left: 4%;
+  }
+
+  .valores {
+    font-size: 1.1rem;
   }
 }
 
