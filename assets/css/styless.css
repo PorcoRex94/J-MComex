@@ -1718,6 +1718,10 @@ textarea::placeholder {
     height: 93vh;
   }
 
+  .video-container {
+    height: 95vh;
+  }
+
   .container-first-row,
   .container-servicios {
     width: 400px;
