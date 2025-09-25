@@ -1494,7 +1494,8 @@ textarea::placeholder {
   }
 
   .form {
-    width: 100%;
+    width: 95%;
+    pad: 1rem;
   }
 
   .backgroundmyv,
