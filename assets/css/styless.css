@@ -1722,6 +1722,10 @@ textarea::placeholder {
     height: 95vh;
   }
 
+  .line-bottom {
+    bottom: 10%;
+  }
+
   .container-first-row,
   .container-servicios {
     width: 400px;
