@@ -1742,6 +1742,14 @@ textarea::placeholder {
   .container-info-container {
     font-size: 1.1rem;
   }
+
+  .hache-tres-myv {
+    font-size: 1.6rem;
+  }
+
+  .backgroundmyv-text {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1782,6 +1790,14 @@ textarea::placeholder {
 
   .valores {
     font-size: 1.3rem;
+  }
+
+  .hache-tres-myv {
+    font-size: 1.4rem;
+  }
+
+  .backgroundmyv-text {
+    font-size: 1.2rem;
   }
 }
 
