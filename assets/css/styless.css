@@ -1860,6 +1860,16 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 378px) {
+  .hache-tres-myv {
+    font-size: 1.3rem;
+  }
+
+  .backgroundmyv-text {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 360px) {
   #header.header-small {
     height: 50px;
