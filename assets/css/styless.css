@@ -1356,6 +1356,10 @@ textarea::placeholder {
   .form {
     width: 100%;
   }
+
+  .form-container {
+    width: 95%;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1494,8 +1498,7 @@ textarea::placeholder {
   }
 
   .form {
-    width: 95%;
-    pad: 1rem;
+    width: 100%;
   }
 
   .backgroundmyv,
