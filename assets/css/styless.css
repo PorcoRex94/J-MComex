@@ -1355,10 +1355,7 @@ textarea::placeholder {
 
   .form {
     width: 100%;
-  }
-
-  .form-container {
-    width: 95%;
+    padding: 1rem !important;
   }
 }
 
