@@ -1150,6 +1150,10 @@ textarea::placeholder {
   .overlay {
     left: -10%;
   }
+
+  .btn__eng {
+    width: 250px;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -1445,6 +1449,10 @@ textarea::placeholder {
     font-size: 1rem;
     letter-spacing: 0.1rem;
   }
+
+  .btn__eng {
+    width: 200px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1522,6 +1530,10 @@ textarea::placeholder {
   .btn__nosotros {
     font-size: 0.8rem;
     width: 135px;
+  }
+
+  .btn__eng {
+    width: 175px;
   }
 
   .first__container__nosotros {
