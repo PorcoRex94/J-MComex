@@ -1724,7 +1724,7 @@ textarea::placeholder {
   }
 
   .line-bottom {
-    bottom: 8.5%;
+    bottom: 5%;
   }
 
   .container-first-row,
@@ -1741,7 +1741,7 @@ textarea::placeholder {
   }
 
   .overlay {
-    top: 12%;
+    top: 13.5%;
   }
 
   .espacio__nosotros {
