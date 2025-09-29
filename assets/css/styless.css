@@ -176,16 +176,6 @@ i {
   color: white;
 }
 
-.overlay__en {
-  position: absolute;
-  top: 15%;
-  left: 4%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  color: white;
-}
-
 .jm-blanco {
   position: relative;
   top: 13%;
@@ -246,7 +236,7 @@ i {
 }
 
 .hache__uno__container__en {
-  left: 11%;
+  left: 10%;
 }
 
 @keyframes zoomIn {
@@ -1744,7 +1734,7 @@ textarea::placeholder {
   }
 
   .hache__uno__container__en {
-    left: 22%;
+    left: 21%;
   }
 
   .es {
@@ -1782,7 +1772,7 @@ textarea::placeholder {
   }
 
   .hache__uno__container__en {
-    left: 20%;
+    left: 19%;
   }
 
   .es {
