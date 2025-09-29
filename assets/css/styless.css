@@ -1078,7 +1078,6 @@ textarea::placeholder {
   }
 
   .overlay {
-    top: 20%;
     left: -8%;
   }
 
@@ -1742,7 +1741,7 @@ textarea::placeholder {
   }
 
   .overlay {
-    top: 15.5%;
+    top: 10%;
   }
 
   .espacio__nosotros {
